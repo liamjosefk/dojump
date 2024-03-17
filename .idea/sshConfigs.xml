@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="198.12.237.161" id="4eb836f2-2841-4e2a-8dc9-02168f7f664d" port="22" customName="dj-server" nameFormat="CUSTOM" username="z0g62set7b11" useOpenSSHConfig="true">
+        <option name="customName" value="dj-server" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>
