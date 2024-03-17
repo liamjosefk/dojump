@@ -12,8 +12,6 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
-    protected $guarded = [];
-
     /**
      * The attributes that are mass assignable.
      *
@@ -21,12 +19,8 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
-        'last_name',
         'email',
-        'phone',
-        'is_active',
         'password',
-        'avatar',
     ];
 
     /**
@@ -47,35 +41,4 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-
-    public function setPasswordAttribute($value) {
-        $this->attributes['password'] = bcrypt($value);
-    }
-
-    public function feeds() {
-        return $this->hasMany(Feed::class);
-    }
-
-    public function permissions() {
-        return $this->belongsToMany(Permission::class);
-    }
-
-    public function roles() {
-        return $this->belongsToMany(Role::class);
-    }
-
-    public function userHasRole($role_name) {
-        foreach($this->roles as $role) {
-            if($role_name == $role->name)
-                 return true;
-        }
-        return false;
-    }
-
-
-
-
-
-
-
 }
