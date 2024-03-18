@@ -273,10 +273,10 @@
                                 <img src="{{asset('storage/images/that-happened.jpg')}}" alt="That Happened Film Release" class="img-responsive width-80 img-right">
                             </div>
                             <div class="col-sm-6 text-sm-right">
-                                <h3 class="raleway-light font-black text-4rem width-80">
+                                <h3 class="raleway-light font-black text-3rem width-80">
                                     SOON FROM DOJUMP
                                 </h3>
-                                <h3 class="raleway-light font-black text-4rem width-80 mt-5">
+                                <h3 class="raleway-light font-black text-3rem width-80 mt-5">
                                     The first screening of <br>
                                     “THAT HAPPENED.” at <br>
                                     PAM CUT’s Tomorrow <br>
