@@ -7332,7 +7332,7 @@ button.bg-dark:focus {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1030;
+  z-index: 2000;
 }
 
 .fixed-bottom {
@@ -11056,6 +11056,12 @@ body.sidebar-toggled footer.sticky-footer {
     font-weight: normal;
     font-style: normal;
 }
+.raleway-light {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+}
 .marck-script-regular {
     font-family: "Marck Script", cursive;
     font-weight: 400;
@@ -11074,4 +11080,49 @@ body.sidebar-toggled footer.sticky-footer {
 }
 .line-height-15 {
     line-height: 2em;
+}
+.img-overlay-wrap {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.img-overlay-wrap .above-fold {
+    display: block;
+}
+.img-overlay-wrap svg {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+}
+.text-top {
+    position: relative;
+    z-index: 1111;
+}
+.width-100 {
+    width: 100% !important;
+}
+.width-80 {
+    width: 80% !important;
+}
+.text-2rem {
+    font-size: 2rem;
+}
+.text-3rem {
+    font-size: 3rem;
+}
+.text-4rem {
+    font-size: 4rem;
+}
+.text-section {
+    padding: 5px 5px 10px 10px;
+}
+.img-right {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+}
+.carousel-inner>.carousel-item {
+    -webkit-transition: opacity .6s ease-in-out;
+    -o-transition: opacity .6s ease-in-out;
+    transition: opacity .6s ease-in-out;
 }
