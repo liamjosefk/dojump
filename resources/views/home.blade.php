@@ -20,9 +20,9 @@
                                 theater, circus skills, illusions, visual arts, narrative and live
                                 original music designed to transport and transform.
                             </p>
-                            <form action="{{route('store_email')}}" method="post">
+                            <form action="{{route('store_email')}}" enctype="multipart/form-data">
                                 @csrf
-                                @method("PUT")
+                                @method('POST')
                                 <div class="white-container mb-2">
                                     <div class="row mt-4">
                                         <div class="col-7">
@@ -35,7 +35,9 @@
                                             <button class="btn btn-green btn-100 mt-3 mb-2" type="submit">Submit</button>
                                         </div>
                                     </div>
-{{--                                    @if(session('success_msg'))--}}
+                                    @if(session()->has('email-stored'))
+                                        {{session('email-stored')}}
+                                    @endif
                                 </div>
                             </form>
                         </div>

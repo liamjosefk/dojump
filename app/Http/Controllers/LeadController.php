@@ -12,6 +12,7 @@ class LeadController extends Controller
         $lead = new Lead();
         $lead->email = request('email');
         $lead->save();
+        session()->flash('email-stored', 'You have Registered.');
         return back();
     }
 
