@@ -11050,6 +11050,20 @@ body.sidebar-toggled footer.sticky-footer {
     font-style: italic;
 }
 
+.raleway-bolder {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.raleway-bold {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
 .raleway-regular {
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
@@ -11105,13 +11119,13 @@ body.sidebar-toggled footer.sticky-footer {
     width: 80% !important;
 }
 .text-2rem {
-    font-size: 2rem;
+    font-size: 1rem;
 }
 .text-3rem {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 .text-4rem {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 .text-section {
     padding: 5px 5px 10px 10px;
