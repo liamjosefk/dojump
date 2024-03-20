@@ -95,83 +95,12 @@
                     </ul>
                 </div>
                 <div>
-                    <a href="#" class="btn btn-lav btn-lg">"THAT HAPPENED"</a>
+                    <a href="{{route('home.that')}}" class="btn btn-lav btn-lg">"THAT HAPPENED"</a>
                 </div>
             </div>
         </nav>
 
         <div class="container-fluid pl-0 pr-0">
-
-            <!-- Above the Fold -->
-            <div class="img-overlay-wrap">
-                <div class="above-fold">
-                    <div class="container text-top">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <p class="marck-script-regular font-black">making art from the inside out</p>
-                                <h1 class="title-text raleway-regular mb-2">
-                                    Robin Lane & <br>
-                                    dojump
-                                </h1>
-                                <p class="line-height-15 mb-2">
-                                    breathtaking physical theater, nation-wide.
-                                    robin lane's ground-breaking style combines humor, dance,
-                                    theater, circus skills, illusions, visual arts, narrative and live
-                                    original music designed to transport and transform.
-                                </p>
-                                <form action="#">
-                                    @csrf
-                                    @method("PUT")
-                                    <div class="white-container mb-2">
-                                        <div class="row mt-4">
-                                            <div class="col-7">
-                                                <div class="form-group">
-                                                    <label for="email">Register for the mailing list:</label>
-                                                    <input type="text" class="form-control" name="email" placeholder="Coming Soon...">
-                                                </div>
-                                            </div>
-                                            <div class="col-5">
-                                                <button class="btn btn-green btn-100 mt-3 mb-2" type="submit">Submit</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="col-sm-6">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="1040.152" height="888" viewBox="0 0 1040.152 888">
-                    <path id="Vector_1580" data-name="Vector 1580" d="M1.651,0c-15.667-78.667,82.9-260.5,178.5-294.5,119.5-42.5,195-55.5,218.5-138.5s-.5-147,69-215,195.724,30,324-125c77.793-94,185.667-100.833,248.5-115l-31.5,829.5Z" transform="translate(1040.152) rotate(180)" fill="#e6cdff" opacity="0.4"/>
-                </svg>
-            </div>
-            <!-- /Above the Fold -->
-
-            <!-- Carousel -->
-            <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade width-100" data-bs-ride="carousel" data-bs-interval="3000">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="{{asset('storage/images/courtney.jpg')}}" class="d-block img-fluid w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="{{asset('storage/images/dog.jpg')}}" class="d-block img-fluid w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="{{asset('storage/images/flip.jpg')}}" class="d-block img-fluid w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-            <!-- /Carousel -->
 
             <!-- History & Artist Statement -->
             <div class="container-fluid pl-0 pr-0 background-content">
