@@ -234,13 +234,13 @@
                                 <div class="col-sm-10 col-md-8">
                                     <div class="container pt-5 pb-5">
                                         <div class="text-section pt-5">
-                                            <p class="raleway-bold text-3rem font-black">
+                                            <p class="raleway-light text-3rem font-black">
                                                 <b> ARTIST STATEMENT </b>
                                             </p>
-                                            <h4 class="raleway-light text-2rem font-black">
+                                            <h4 class="raleway-regular text-2rem font-black">
                                                 I have a problem with reality.
                                             </h4>
-                                            <h4 class="raleway-light text-2rem font-black mt-4">
+                                            <h4 class="raleway-regular text-2rem font-black mt-4">
                                                 Something I have been reflecting on a lot is why and how art happens. I think Art is one of the most absolutely necessary and
                                                 completely impossible things to do. I have always been plagued with complex visions that won’t leave me alone until I let them
                                                 out. Literally hundreds of brilliant people have added their visions and talents to my own to help me do this. The big problem
@@ -249,7 +249,7 @@
                                                 that it is in the translation of impossible visions into (only slightly less impossible to create) reality, where magic happens.
                                                 It is because of reality, that ingenuity, generosity, community and surprises occur.
                                             </h4>
-                                            <h4 class="raleway-light text-2rem font-black mt-4">
+                                            <h4 class="raleway-regular text-2rem font-black mt-4">
                                                 It is the process of making art, as much as the art itself which enlivens our communities. And it is important to support this
                                                 process, so that we can share the otherwise indescribable landscapes of our inner selves with each other. Everyone has these
                                                 landscapes. Artists speak languages that allow all of us to experiences our common humanity together. I love this world, even
@@ -257,7 +257,7 @@
                                                 before dawn, but art can take my breath away anytime. Art allows us to remember what we love, as well as feel our anguish about
                                                 what we don’t’, and everything between (which definitely includes laughter).
                                             </h4>
-                                            <h4 class="raleway-light text-2rem font-black mt-4">
+                                            <h4 class="raleway-regular text-2rem font-black mt-4">
                                                 The arts have a big job to do in our world. We have to be very creative in this dance between reality and our commitment to travel
                                                 and report back from the world of the imagination, the possible, and the heart.
                                             </h4>
