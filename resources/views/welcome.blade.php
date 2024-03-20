@@ -234,7 +234,7 @@
                                 <div class="col-sm-10 col-md-8">
                                     <div class="container pt-5 pb-5">
                                         <div class="text-section pt-5">
-                                            <p class="raleway-light text-3rem font-black">
+                                            <p class="raleway-bold text-3rem font-black">
                                                 <b> ARTIST STATEMENT </b>
                                             </p>
                                             <h4 class="raleway-light text-2rem font-black">
