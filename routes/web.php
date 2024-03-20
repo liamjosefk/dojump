@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/that-happened', [App\Http\Controllers\HomeController::class, 'that_happened'])->name('home.that');
 
 Auth::routes();
 
