@@ -18,8 +18,7 @@ Route::get('/', function () {
 });
 Route::get('/that-happened', [App\Http\Controllers\HomeController::class, 'that_happened'])->name('home.that');
 
-Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/that-happened', [App\Http\Controllers\HomeController::class, 'that_happened'])->name('home.that');
+Auth::routes();
