@@ -16,9 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/that-happened', [App\Http\Controllers\HomeController::class, 'that_happened'])->name('home.that');
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/that-happened', [App\Http\Controllers\HomeController::class, 'that_happened'])->name('home.that');
+
+Route::put('/store-email', [App\Http\Controllers\LeadController::class, 'store'])->name('store_email');
 
 Auth::routes();

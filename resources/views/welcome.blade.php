@@ -69,12 +69,12 @@
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#">DJ</a>
+                <a class="navbar-brand" href="{{route('home')}}">DJ</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav m-auto">
+                    <ul class="navbar-nav m-auto hidden">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Home
                                 <span class="sr-only">(current)</span>
@@ -119,7 +119,7 @@
                                     theater, circus skills, illusions, visual arts, narrative and live
                                     original music designed to transport and transform.
                                 </p>
-                                <form action="#">
+                                <form action="{{route('store_email')}}" method="post">
                                     @csrf
                                     @method("PUT")
                                     <div class="white-container mb-2">
@@ -127,7 +127,7 @@
                                             <div class="col-7">
                                                 <div class="form-group">
                                                     <label for="email">Register for the mailing list:</label>
-                                                    <input type="text" class="form-control" name="email" placeholder="Coming Soon...">
+                                                    <input type="text" class="form-control" name="email">
                                                 </div>
                                             </div>
                                             <div class="col-5">

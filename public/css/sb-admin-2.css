@@ -11151,3 +11151,6 @@ body.sidebar-toggled footer.sticky-footer {
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(165,147,184,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#a593b8",GradientType=1);
 }
+.hidden {
+    display:none;
+}
