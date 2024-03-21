@@ -112,7 +112,7 @@
 
 <!-- That Happened Description -->
 <div class="container-fluid pl-0 pr-0 pt-5 pb-5 gradiant-lav text-center">
-    <h1 class="uppercase raleway-normal font-4em">"That Happened</h1>
+    <h1 class="uppercase raleway-normal font-4em">"That Happened"</h1>
     <h4 class="raleway-light font-black text-3rem width-100 mt-3">
         Robin Lane’s feature length theater-circus-danceumentary A story about Do Jump (a hard to describe performance
         ensemble based in Portland Oregon).
