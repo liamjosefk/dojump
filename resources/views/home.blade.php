@@ -20,7 +20,7 @@
                                 theater, circus skills, illusions, visual arts, narrative and live
                                 original music designed to transport and transform.
                             </p>
-                            <form action="{{route('store_email')}}" enctype="multipart/form-data">
+                            <form action="{{route('store_email')}}" method="post" enctype="multipart/form-data">
                                 @csrf
                                 @method('POST')
                                 <div class="white-container mb-2">
@@ -28,7 +28,7 @@
                                         <div class="col-7">
                                             <div class="form-group">
                                                 <label for="email">Register for the mailing list:</label>
-                                                <input type="text" class="form-control" name="email">
+                                                <input type="text" class="form-control" name="email" placeholder="Coming Soon!">
                                             </div>
                                         </div>
                                         <div class="col-5">
@@ -193,6 +193,17 @@
             </div>
         </div>
         <!-- /History & Artist Statement -->
+
+        <!-- Videos -->
+        <div class="row mt-5">
+            <div class="col-sm-6">
+                <iframe src="https://player.vimeo.com/video/186475936?h=bc82596ace" width="100%" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-sm-6">
+                <iframe src="https://player.vimeo.com/video/186474902?h=0fa7a22a22" width="100%" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <!-- /Videos -->
 
     </div>
 @endsection
