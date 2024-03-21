@@ -206,13 +206,15 @@
         <!-- /Videos -->
 
         <!-- Email -->
-        <div class="row text-center mb-5">
-            <div class="col-12">
-                <h3 class="raleway-bold text-black text-3rem mt-5">
-                    <a href="mailto:dojump@dojump.org">dojump@dojump.org</a>
-                </h3>
-            </div>
-        </div>
+       <div class="container">
+           <div class="row text-center mb-5">
+               <div class="col-12">
+                   <h3 class="raleway-bold text-black text-3rem mt-5">
+                       <a href="mailto:dojump@dojump.org">dojump@dojump.org</a>
+                   </h3>
+               </div>
+           </div>
+       </div>
         <!-- /Email -->
 
     </div>
