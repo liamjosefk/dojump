@@ -126,6 +126,9 @@
     <h5 class="raleway-light text-black text-2rem mt-5">
         A Benefit for Do Jump New Works Fund. Choreo-Directed by Robin Lane.
     </h5>
+    <h3 class="raleway-bold text-black text-3rem mt-5">
+        <a href="mailto:dojump@dojump.org">dojump@dojump.org</a>
+    </h3>
 </div>
 <!-- /That Happened Description -->
 
