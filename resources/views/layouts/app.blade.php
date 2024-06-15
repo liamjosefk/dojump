@@ -65,7 +65,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('home') }}">
                     DJ
@@ -76,7 +76,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav m-auto hidden">
+                    <ul class="navbar-nav m-auto">
 
                         <li class="nav-item active">
                             <a class="nav-link" href="{{route('home')}}">Home
@@ -84,17 +84,17 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Work</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
+                            <a class="nav-link" href="{{route('home.that')}}">That Happened</a>
+{{--                        </li>--}}
+{{--                        <li class="nav-item">--}}
+{{--                            <a class="nav-link" href="#">Work</a>--}}
+{{--                        </li>--}}
+{{--                        <li class="nav-item">--}}
+{{--                            <a class="nav-link" href="#">Blog</a>--}}
+{{--                        </li>--}}
+{{--                        <li class="nav-item">--}}
+{{--                            <a class="nav-link" href="#">Contact</a>--}}
+{{--                        </li>--}}
 
                     </ul>
 
@@ -134,9 +134,9 @@
 {{--                        @endguest--}}
 {{--                    </ul>--}}
                 </div>
-                <div>
-                    <a href="{{route('home.that')}}" class="btn btn-lav btn-lg">"THAT HAPPENED"</a>
-                </div>
+{{--                <div>--}}
+{{--                    <a href="{{route('home.that')}}" class="btn btn-lav btn-lg">"THAT HAPPENED"</a>--}}
+{{--                </div>--}}
             </div>
         </nav>
 

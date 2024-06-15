@@ -51,24 +51,29 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav m-auto hidden">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Work</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
+            <ul class="navbar-nav m-auto">
+                <ul class="navbar-nav m-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('home')}}">Home
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{route('home.that')}}">That Happened
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    {{--                        </li>--}}
+                    {{--                        <li class="nav-item">--}}
+                    {{--                            <a class="nav-link" href="#">Work</a>--}}
+                    {{--                        </li>--}}
+                    {{--                        <li class="nav-item">--}}
+                    {{--                            <a class="nav-link" href="#">Blog</a>--}}
+                    {{--                        </li>--}}
+                    {{--                        <li class="nav-item">--}}
+                    {{--                            <a class="nav-link" href="#">Contact</a>--}}
+                    {{--                        </li>--}}
+
+                </ul>
             </ul>
         </div>
     </div>
@@ -114,14 +119,20 @@
 <div class="container-fluid pl-0 pr-0 pt-5 pb-5 gradiant-lav text-center">
     <h1 class="uppercase raleway-normal font-4em">"That Happened"</h1>
     <h4 class="raleway-light font-black text-3rem width-100 mt-3">
-        Robin Lane’s feature length theater-circus-danceumentary A story about Do Jump (a hard to describe performance
-        ensemble based in Portland Oregon).
+        Robin Lane’s feature length theater-circus-danceumentary.
+    </h4>
+    <h4 class="raleway-light font-black text-3rem width-100 mt-3">
+        Original score created by Joan Szymko.
+    </h4>
+    <h4 class="raleway-light font-black text-3rem width-100 mt-3">
+        The film premiered on April 26, 2024 at PAM CUT's Tomorrow Theater in Portland, Oregon,
         <br>
-        From 2020 to the present, THAT HAPPENED was created in real time, virtually
-        and in person. It is a physical, comprehensive, poignant and zany, multi genre reflection of the evolving experiences
-        of an ensemble of talented circus performers and musicians during this extraordinary time. The film opens with a
-        whirlwind journey through “Do Jump” live performances from 1977 through 2019 and ends at the Tomorrow theater.
-        A Benefit for Do Jump New Works Fund. Choreo-Directed by Robin Lane.
+        with a filming of the live audience used to complete the film.
+    </h4>
+    <h4 class="raleway-light font-black text-3rem width-100 mt-3">
+        Contact us to learn more about Screenings.
+        <br>
+        Streaming options coming soon.
     </h4>
     <h5 class="raleway-light text-black text-2rem mt-5">
         A Benefit for Do Jump New Works Fund. Choreo-Directed by Robin Lane.
