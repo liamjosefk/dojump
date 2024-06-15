@@ -85,30 +85,30 @@
         <div class="mb-5 pt-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-12">
                         <img src="{{asset('storage/images/that-happened.jpg')}}" alt="That Happened Film Release" class="img-responsive width-100 img-right">
                     </div>
-                    <div class="col-sm-6 text-sm-right">
-                        <h3 class="raleway-normal font-black text-3rem width-80">
-                            SOON FROM DOJUMP
-                        </h3>
-                        <h3 class="raleway-light font-black text-3rem width-80 mt-5">
-                            The first screening of <br>
-                            “THAT HAPPENED.” at <br>
-                            PAM CUT’s Tomorrow <br>
-                            Theater Friday April 26th <br>
-                            at 7 pm.
-                        </h3>
-                    </div>
+{{--                    <div class="col-sm-6 text-sm-right">--}}
+{{--                        <h3 class="raleway-normal font-black text-3rem width-80">--}}
+{{--                            SOON FROM DOJUMP--}}
+{{--                        </h3>--}}
+{{--                        <h3 class="raleway-light font-black text-3rem width-80 mt-5">--}}
+{{--                            The first screening of <br>--}}
+{{--                            “THAT HAPPENED.” at <br>--}}
+{{--                            PAM CUT’s Tomorrow <br>--}}
+{{--                            Theater Friday April 26th <br>--}}
+{{--                            at 7 pm.--}}
+{{--                        </h3>--}}
+{{--                    </div>--}}
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <h3 class="raleway-light font-black text-3rem width-100 mt-5">
-                            Doors will open at 6:30 with live music and pre-show performances by Do Jump Company members.
-                            The film will end with the filming of the final moment of the film in the theater!
-                        </h3>
-                    </div>
-                </div>
+{{--                <div class="row">--}}
+{{--                    <div class="col-12">--}}
+{{--                        <h3 class="raleway-light font-black text-3rem width-100 mt-5">--}}
+{{--                            Doors will open at 6:30 with live music and pre-show performances by Do Jump Company members.--}}
+{{--                            The film will end with the filming of the final moment of the film in the theater!--}}
+{{--                        </h3>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
             </div>
         </div>
     </div>
