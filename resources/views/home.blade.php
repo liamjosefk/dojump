@@ -86,7 +86,7 @@
                             <div class="col-sm-6 pl-0">
                                 <div class="container pt-5 pb-5">
                                     <div class="text-section pt-5">
-                                        <p class="raleway-light text-3rem font-black">
+                                        <p class="raleway-regular text-3rem font-black">
 
                                             <b> ABOUT ROBIN LANE & DO JUMP</b>
                                             <br>
@@ -178,7 +178,7 @@
                         </div>
                         <div class="col-sm-6 text-sm-right">
                             <h3 class="raleway-light font-black text-3rem width-80">
-                                SOON FROM DOJUMP
+                                NEW FROM DOJUMP
                             </h3>
                             <h3 class="raleway-light font-black text-3rem width-80 mt-5">
                                 The first screening of <br>
