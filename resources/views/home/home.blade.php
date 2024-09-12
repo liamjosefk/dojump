@@ -1,5 +1,53 @@
 @extends('layouts.app')
 
+@section('page_title')
+    DoJump
+@endsection
+
+@section('styles')
+    <style>
+        .above-fold {
+            background-image: url("{{asset('storage/images/home-page-background.jpg')}}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-height: auto;
+            background-position: center;
+            height: 100vh;
+            padding-top: 20%;
+        }
+        .background-content {
+            background-image: url("{{asset('storage/images/background.jpg')}}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-height: auto;
+            background-position: center;
+        }
+        .hand-back {
+            background-image: url("{{asset('storage/images/hands.png')}}");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-height: auto;
+            background-position: left;
+        }
+        .globe-head {
+            background-image: url("{{asset('storage/images/globe.png')}}");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-height: auto;
+            background-position: right;
+        }
+        .svg-back {
+            height: 100vh;
+        }
+    </style>
+@endsection
+
+
+@section('scripts')
+
+@endsection
+
+
 @section('content')
     <div class="container-fluid pl-0 pr-0">
 
@@ -219,3 +267,4 @@
 
     </div>
 @endsection
+

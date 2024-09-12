@@ -5,8 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a8e8501-d7e4-4b65-bc80-cd5cef4631c3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/home/contact.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/donate.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/on-stage.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/portfolio/photo.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/portfolio/stage.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/portfolio/video.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/reviews/audience.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/reviews/critic.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/services/corporate-events.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home/services/directing.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/that-happened.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/that-happened.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/sb-admin-2.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/sb-admin-2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/that-happened.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/that-happened.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome-delete.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,6 +198,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\liamj\dev-projects\do-jump\resources\views\home" />
       <recent name="C:\Users\liamj\dev-projects\zetemple-v3\resources\views\components\sidebar" />
     </key>
   </component>
@@ -244,7 +262,12 @@
       <workItem from="1711049665906" duration="395000" />
       <workItem from="1718429999564" duration="4624000" />
       <workItem from="1718477053720" duration="198000" />
-      <workItem from="1718477999714" duration="520000" />
+      <workItem from="1718477999714" duration="639000" />
+      <workItem from="1724542332511" duration="2000" />
+      <workItem from="1724542487819" duration="8684000" />
+      <workItem from="1724566943278" duration="601000" />
+      <workItem from="1724607179938" duration="14000" />
+      <workItem from="1726176570873" duration="8649000" />
     </task>
     <servers />
   </component>
