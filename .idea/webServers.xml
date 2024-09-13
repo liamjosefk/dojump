@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="589bfa80-1ec8-4ce8-a0c1-c94d35161915" name="DJ Server">
-        <fileTransfer accessType="SFTP" host="68.178.202.21" port="22" sshConfigId="4eb836f2-2841-4e2a-8dc9-02168f7f664d" sshConfig="dj-server">
+        <fileTransfer rootFolder="/var/www/dojump.org" accessType="SFTP" host="68.178.202.21" port="22" sshConfigId="4eb836f2-2841-4e2a-8dc9-02168f7f664d" sshConfig="dj-server">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

@@ -23,10 +23,50 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('home.home');
+    }
+    public function on_stage()
+    {
+        return view('home.on-stage');
+    }
+    public function services_directing()
+    {
+        return view('home.services.directing');
+    }
+    public function services_corporate()
+    {
+        return view('home.services.corporate-events');
+    }
+    public function portfolio_stage()
+    {
+        return view('home.portfolio.stage');
+    }
+    public function portfolio_photo()
+    {
+        return view('home.portfolio.photo');
+    }
+    public function portfolio_video()
+    {
+        return view('home.portfolio.video');
+    }
+    public function reviews_critic()
+    {
+        return view('home.reviews.critic');
+    }
+    public function reviews_audience()
+    {
+        return view('home.reviews.audience');
+    }
+    public function donate()
+    {
+        return view('home.donate');
+    }
+    public function contact()
+    {
+        return view('home.contact');
     }
     public function that_happened()
     {
-        return view('that-happened');
+        return view('home.that-happened');
     }
 }
