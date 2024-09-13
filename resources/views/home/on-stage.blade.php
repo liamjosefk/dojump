@@ -61,7 +61,7 @@
                             <h3>AHHH HA!</h3>
                         </div>
                         <div class="card-body">
-                            <p>
+                            <p class="text-lg raleway-light">
                                 Expect lots of twists and turns along the way with this ageless show, perfect for the whole family! This visually stunning work comprises aerial dance, circus arts, illusion and live music.
                             </p>
                         </div>
@@ -91,7 +91,7 @@
                             <h3>At Such a Dizzy Height</h3>
                         </div>
                         <div class="card-body">
-                            <p>
+                            <p class="text-lg raleway-light">
                                 Inspiration drawn from the paintings of Marc Chagall, DOJUMP takes the audience on a playful journey celebrating life, love, color, shape and spirit.
                             </p>
                             <br>
@@ -122,7 +122,7 @@
                             <h3>TIGER LILLY & SUNNY LU</h3>
                         </div>
                         <div class="card-body">
-                            <p>
+                            <p class="text-lg raleway-light">
                                 Tiger Lilly & Sunny Lu is based on the memoirs of Sunny Lu, a beautiful orange Tabby. See the extraordinary human members of DOJUMP create a one-room feline circus.
                             </p>
                             <br>

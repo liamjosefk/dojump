@@ -59,11 +59,11 @@
                     </h2>
                 </div>
                 <div class="col-sm-8 offset-sm-2">
-                    <p>
+                    <p class="text-lg raleway-regular">
                         Lane brings the experience of four decades of creating ensemble with companies from diverse performance backgrounds. Her unique directing approach can help you bring your creative process into focus, create a cast deeply connected to each other, to the truth of their material and to communicating that truth while connecting with , and entertaining their audience.The powerful and gradient methods work to propel performers and students past fixed ideas and limitations.
                     </p>
-                    <a href="#" class="btn btn-primary mt-4">
-                        We Can Help
+                    <a href="{{route('home.contact')}}" class="btn btn-primary mt-4">
+                       <h2> We Can Help</h2>
                     </a>
                 </div>
             </div>
@@ -80,7 +80,7 @@
                                     <h3>
                                         Mentoring, Workshops, & Design
                                     </h3>
-                                    <p>
+                                    <p class="text-lg raleway-light">
                                         Custom Aerial Dance workshops Choreography, Rigging and Lighting Design. Ensemble building workshops, Original material generating workshops and mentoring.
                                     </p>
                                 </div>
@@ -94,7 +94,7 @@
                                     <h3 class="text-sm-right">
                                         Directing Your Circus Act
                                     </h3>
-                                    <p class="text-sm-right">
+                                    <p class="text-sm-right text-lg raleway-light">
                                         Let us help you hone the unique talents and performance qualities that inspire you to shine. We can create or fine tune your choreography, discover and realize your theatrical concept, and enhance your musicality and technique.
                                     </p>
                                 </div>
@@ -114,7 +114,7 @@
                                     <h3>
                                         Show Doctor
                                     </h3>
-                                    <p>
+                                    <p class="text-lg raleway-light">
                                         We can help you integrate multi media into your performance, create a scene that is outside your normal area of expertise, add spectacle , circus or aerial work to your show…
                                     </p>
                                 </div>
