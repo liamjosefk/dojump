@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Lead;
 use App\Services\MailchimpService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class LeadController extends Controller
 {
@@ -21,21 +22,38 @@ class LeadController extends Controller
     {
         $request->validate(['email' => 'required|email']);
 
-        $listId = '651638';  // CHANGE THE  list ID from Mailchimp dashboard
+        $listId = '651638';  // Your Mailchimp list ID
 
-        $response = $this->mailchimp->addToList($request->email, $listId);
+        try {
+            // Attempt to add the email to Mailchimp
+            $response = $this->mailchimp->addToList($request->email, $listId);
 
-        $lead = new Lead();
-        $lead->email = request('email');
-        $lead->save();
-        session()->flash('email-stored', 'You have Registered.');
+            // Store email locally in the database
+            $lead = new Lead();
+            $lead->email = $request->email;
+            $lead->save();
+            session()->flash('email-stored', 'Email Stored');
 
-        if (is_array($response) && isset($response['id'])) {
-            return back()->with('success', 'Successfully subscribed!');
+            // Check if the response indicates success
+            if (is_array($response) && isset($response['id'])) {
+                return back()->with('success', 'Successfully subscribed!');
+            }
+
+            // Log the response to check what went wrong
+            Log::error('Mailchimp Error Response: ', ['response' => $response]);
+
+            // Return with error if Mailchimp API fails
+            return back()->with('error', 'Failed to subscribe.');
+
+        } catch (\Exception $e) {
+            // Log the exact error message for debugging
+            Log::error('Mailchimp API Exception: ', ['error' => $e->getMessage()]);
+
+            // Return with error message
+            return back()->with('error', 'Failed to subscribe. Please try again later.');
         }
-
-        return back()->with('error', 'Failed to subscribe.');
     }
+
 
 
     public function store() {
