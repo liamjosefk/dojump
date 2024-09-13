@@ -22,7 +22,7 @@ class LeadController extends Controller
     {
         $request->validate(['email' => 'required|email']);
 
-        $listId = 'your-mailchimp-list-id';  // Replace with your actual Mailchimp List ID
+        $listId = '9ccc3b942f';  // Replace with your actual Mailchimp List ID
 
         try {
             // Attempt to add the email to Mailchimp
