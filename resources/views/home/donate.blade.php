@@ -29,8 +29,8 @@
                         <div class="col-sm-6">
                             <div class="col-md-6">
                                 <div class="cont-back">
-                                    <p class="marck-script-regular font-white">making art from the inside out</p>
-                                    <h1 class="title-text raleway-regular mb-2">
+                                    <p class="marck-script-regular text-white">making art from the inside out</p>
+                                    <h1 class="title-text raleway-regular mb-2 text-white">
                                         Donate
                                     </h1>
                                 </div>
