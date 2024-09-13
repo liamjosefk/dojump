@@ -53,7 +53,7 @@ return [
     'channels' => [
         'stack' => [
             'driver' => 'stack',
-            'channels' => ['single'],
+            'channels' => ['single', 'slack'], // Add slack to the stack channels.
             'ignore_exceptions' => false,
         ],
 
@@ -72,10 +72,10 @@ return [
 
         'slack' => [
             'driver' => 'slack',
-            'url' => env('LOG_SLACK_WEBHOOK_URL'),
+            'url' => env('SLACK_WEBHOOK_URL'),
             'username' => 'Laravel Log',
             'emoji' => ':boom:',
-            'level' => env('LOG_LEVEL', 'critical'),
+            'level' => 'error', 'critical', 'warning', // Change this to 'debug', 'info', 'warning', etc. if you want more log levels.
         ],
 
         'papertrail' => [
