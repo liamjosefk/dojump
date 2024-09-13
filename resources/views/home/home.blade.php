@@ -80,27 +80,27 @@
                                 @method('POST')
                                 <div class="white-container mb-2">
                                     <div class="row mt-4">
-                                        <div class="col-7">
+                                        <div class="col-sm-7">
                                             <div class="form-group">
                                                 <label for="email">Register for the mailing list:</label>
                                                 <input type="text" class="form-control" name="email" placeholder="email@email.com" required>
                                             </div>
                                         </div>
-                                        <div class="col-5">
+                                        <div class="col-sm-5">
                                             <label for="submit"></label>
                                             <button class="btn btn-primary btn-100 mt-1 mb-2" type="submit">Submit</button>
                                         </div>
                                     </div>
                                     @if (session('success'))
-                                        <p class="alert alert-success">{{ session('success') }}</p>
+                                        <p class="text-primary">{{ session('success') }}</p>
                                     @endif
 
                                     @if (session('error'))
-                                        <p class="alert alert-danger">{{ session('error') }}</p>
+                                        <p class="text-primary">{{ session('error') }}</p>
                                     @endif
 
                                     @if (session('info'))
-                                        <p class="alert alert-info">{{ session('info') }}</p>
+                                        <p class="text-primary">{{ session('info') }}</p>
                                     @endif
 
                                 </div>

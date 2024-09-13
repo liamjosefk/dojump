@@ -55,10 +55,10 @@
             <div class="row">
                 <div class="col-sm-10 offset-sm-1">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-sm-4">
                             <img src="{{asset('storage/images/corporate-events.jpg')}}" class="d-block img-fluid w-100" alt="...">
                         </div>
-                        <div class="col-8">
+                        <div class="col-sm-8">
                             <h2 class="text-primary">
                                 Artistic, Civic, Corporate, & Private Events
                             </h2>
