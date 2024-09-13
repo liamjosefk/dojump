@@ -32,7 +32,7 @@ class LeadController extends Controller
             $lead = new Lead();
             $lead->email = $request->email;
             $lead->save();
-            session()->flash('email-stored', 'Email Stored');
+            session()->flash('email-stored', 'Subscribed');
 
             // Check if the response indicates success (use `status` field to check for "subscribed")
             if (isset($response->status) && $response->status === 'subscribed') {
