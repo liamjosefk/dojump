@@ -91,12 +91,18 @@
                                             <button class="btn btn-primary btn-100 mt-1 mb-2" type="submit">Submit</button>
                                         </div>
                                     </div>
-                                    @if(session()->has('email-stored'))
-                                        {{session('email-stored')}}
+                                    @if (session('success'))
+                                        <p class="alert alert-success">{{ session('success') }}</p>
                                     @endif
+
                                     @if (session('error'))
-                                        <p>{{ session('error') }}</p>
+                                        <p class="alert alert-danger">{{ session('error') }}</p>
                                     @endif
+
+                                    @if (session('info'))
+                                        <p class="alert alert-info">{{ session('info') }}</p>
+                                    @endif
+
                                 </div>
                             </form>
                         </div>
