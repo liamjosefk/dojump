@@ -23,7 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,400;0,900;1,700&display=swap" rel="stylesheet">
-    
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7RS358E60B"></script>
     <script>
@@ -83,9 +83,9 @@
                                 <a class="dropdown-item {{ Request::routeIs('home.portfolio.video') ? 'disabled' : '' }}" href="{{route('home.portfolio.video')}}">
                                     Videos
                                 </a>
-                                <a class="dropdown-item {{ Request::routeIs('home.portfolio.photo') ? 'disabled' : '' }}" href="{{route('home.portfolio.photo')}}">
-                                    Photos
-                                </a>
+{{--                                <a class="dropdown-item {{ Request::routeIs('home.portfolio.photo') ? 'disabled' : '' }}" href="{{route('home.portfolio.photo')}}">--}}
+{{--                                    Photos--}}
+{{--                                </a>--}}
                             </div>
                         </li>
                         <li class="nav-item dropdown no-arrow">
