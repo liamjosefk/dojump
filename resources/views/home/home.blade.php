@@ -22,22 +22,29 @@
             background-height: auto;
             background-position: center;
         }
-        .hand-back {
-            background-image: url("{{asset('storage/images/hands.png')}}");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-height: auto;
-            background-position: left;
+        @media screen and (min-width: 800px) {
+            .hand-back {
+                background-image: url("{{asset('storage/images/hands.png')}}");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-height: auto;
+                background-position: left;
+            }
+            .globe-head {
+                background-image: url("{{asset('storage/images/globe.png')}}");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-height: auto;
+                background-position: right;
+            }
         }
-        .globe-head {
-            background-image: url("{{asset('storage/images/globe.png')}}");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-height: auto;
-            background-position: right;
-        }
+
         .svg-back {
             height: 100vh;
+        }
+
+        .happening-image {
+            background-image: url('{{asset('storage/images/that-happened.jpg')}}');
         }
     </style>
 @endsection
@@ -80,7 +87,8 @@
                                             </div>
                                         </div>
                                         <div class="col-5">
-                                            <button class="btn btn-primary btn-100 mt-3 mb-2" type="submit">Submit</button>
+                                            <label for="submit"></label>
+                                            <button class="btn btn-primary btn-100 mt-1 mb-2" type="submit">Submit</button>
                                         </div>
                                     </div>
                                     @if(session()->has('email-stored'))
@@ -102,6 +110,42 @@
             </div>
         </div>
         <!-- /Above the Fold -->
+
+        <!-- New from DoJump -->
+        <div class="">
+            <div class="happening-image">
+                <div class="happening-text">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <img src="{{asset('storage/images/that-happened-poster.jpg')}}" alt="That Happened Film Release" class="">
+                        </div>
+                        <div class="col-sm-6">
+                            <h2>
+                                NEW
+                                FROM
+                                DOJUMP
+                            </h2>
+                            <p>
+                                Do Jumps first feature film "THAT HAPPENED"
+                                <br>
+                                has been selected for
+                                <br>
+                                THE PORTLAND FILM FESTIVAL
+                                <br>
+                                in October!
+                            </p>
+                            <div class="row mt-4">
+                                <div class="col-sm-6 offset-sm-3">
+                                    <a href="{{route('home.that')}}" class="btn btn-outline-primary btn-100">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /New from DoJump -->
 
         <!-- Carousel -->
         <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade width-100" data-bs-ride="carousel" data-bs-interval="3000">
@@ -221,38 +265,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="mb-5 pt-5">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <img src="{{asset('storage/images/that-happened.jpg')}}" alt="That Happened Film Release" class="img-responsive width-80 img-right">
-                        </div>
-                        <div class="col-sm-6 text-sm-right">
-                            <h3 class="raleway-light font-black text-3rem width-80">
-                                NEW FROM DOJUMP
-                            </h3>
-                            <h3 class="raleway-light font-black text-3rem width-80 mt-5">
-                                The first screening of <br>
-                                “THAT HAPPENED.” at <br>
-                                PAM CUT’s <br>
-                                Tomorrow Theater
-                            </h3>
-                        </div>
+                <!-- Videos -->
+                <div class="row mt-5">
+                    <div class="col-sm-6">
+                        <iframe src="https://player.vimeo.com/video/186475936?h=bc82596ace" width="100%" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-sm-6">
+                        <iframe src="https://player.vimeo.com/video/186474902?h=0fa7a22a22" width="100%" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
+                <!-- /Videos -->
             </div>
         </div>
         <!-- /History & Artist Statement -->
 
-        <!-- Videos -->
-        <div class="row mt-5">
-            <div class="col-sm-6">
-                <iframe src="https://player.vimeo.com/video/186475936?h=bc82596ace" width="100%" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="col-sm-6">
-                <iframe src="https://player.vimeo.com/video/186474902?h=0fa7a22a22" width="100%" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-        <!-- /Videos -->
+
 
         <!-- Email -->
        <div class="container">
