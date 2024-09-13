@@ -22,42 +22,45 @@ class LeadController extends Controller
     {
         $request->validate(['email' => 'required|email']);
 
-        $listId = '9ccc3b942f';  // Replace with your actual Mailchimp List ID
+        $listId = '9ccc3b942f';  // Your Mailchimp List ID
 
         try {
             // Attempt to add the email to Mailchimp
             $response = $this->mailchimp->addToList($request->email, $listId);
 
+            // Log the full response to understand its structure
+            Log::info('Mailchimp Response: ', ['response' => $response]);
+
             // Store email locally in the database
             $lead = new Lead();
             $lead->email = $request->email;
             $lead->save();
+            session()->flash('email-stored', 'Email Stored');
 
-            // Check if the response indicates success (use `status` field to check for "subscribed")
+            // Check if the response indicates success
             if (isset($response->status) && $response->status === 'subscribed') {
                 return back()->with('success', 'Successfully subscribed!');
             }
 
-            // Log any unexpected response errors
-            Log::error('Mailchimp Error Response: ', ['response' => $response]);
+            // If the response doesn't have the expected status, log it
+            Log::error('Unexpected Mailchimp Response: ', ['response' => $response]);
 
-            // Return with error if Mailchimp API fails
             return back()->with('error', 'Failed to subscribe.');
 
         } catch (\Exception $e) {
             // Check if the error is due to "Member Exists"
-            if (strpos($e->getMessage(), 'Member Exists') !== false) {
-                // Return a custom response for already subscribed users
+            $errorMessage = $e->getMessage();
+            Log::error('Mailchimp API Exception: ', ['error' => $errorMessage]);
+
+            if (strpos($errorMessage, 'Member Exists') !== false) {
                 return back()->with('info', 'You are already subscribed!');
             }
 
-            // Log the exact error message for debugging
-            Log::error('Mailchimp API Exception: ', ['error' => $e->getMessage()]);
-
-            // Return with generic error message
+            // Return with generic error message for other exceptions
             return back()->with('error', 'Failed to subscribe. Please try again later.');
         }
     }
+
 
 
 
