@@ -4166,8 +4166,8 @@ input[type="button"].btn-block {
     position: absolute;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
   .navbar-expand-lg > .container,
   .navbar-expand-lg > .container-fluid {
@@ -11164,7 +11164,7 @@ body.sidebar-toggled footer.sticky-footer {
   background-height: auto;
   background-position: center;
   height: 60vh;
-  padding-top: 20%;
+  padding-top: 15%;
 }
 .above-fold-interior .cont-back {
   background-color: rgba(0,0,0,.6);
@@ -11208,4 +11208,9 @@ body.sidebar-toggled footer.sticky-footer {
   font-size: 3rem;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
+}
+@media screen and (max-width: 890px) {
+  .hidden-xs {
+    display: none !important;
+  }
 }
