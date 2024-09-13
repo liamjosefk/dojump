@@ -76,12 +76,11 @@
                                         <div class="col-7">
                                             <div class="form-group">
                                                 <label for="email">Register for the mailing list:</label>
-                                                <input type="text" class="form-control" name="email" placeholder="email@email.com">
+                                                <input type="text" class="form-control" name="email" placeholder="Coming Soon!">
                                             </div>
                                         </div>
                                         <div class="col-5">
-                                            <label for="submit"></label>
-                                            <button class="btn btn-primary btn-100 mt-1" type="submit">Submit</button>
+                                            <button class="btn btn-green btn-100 mt-3 mb-2" type="submit">Submit</button>
                                         </div>
                                     </div>
                                     @if(session()->has('email-stored'))
