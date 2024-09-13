@@ -5,17 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a8e8501-d7e4-4b65-bc80-cd5cef4631c3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Services/MailchimpService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/do-jump.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/do-jump.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/donate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/donate.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/on-stage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/on-stage.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/portfolio/photo.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/portfolio/photo.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/portfolio/stage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/portfolio/stage.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/portfolio/video.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/portfolio/video.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/reviews/audience.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/reviews/audience.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/reviews/critic.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/reviews/critic.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/services/corporate-events.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/services/corporate-events.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/services/directing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/services/directing.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LeadController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LeadController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,6 +154,7 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/cli-parser" />
       <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
       <path value="$PROJECT_DIR$/vendor/laravel/prompts" />
+      <path value="$PROJECT_DIR$/vendor/mailchimp/marketing" />
     </include_path>
   </component>
   <component name="ProjectId" id="2GZ0ZHCvNZUGq63clXhlb1z7UHD" />
@@ -260,7 +258,8 @@
       <workItem from="1724566943278" duration="601000" />
       <workItem from="1724607179938" duration="14000" />
       <workItem from="1726176570873" duration="23360000" />
-      <workItem from="1726211422688" duration="352000" />
+      <workItem from="1726211422688" duration="697000" />
+      <workItem from="1726212539611" duration="1011000" />
     </task>
     <servers />
   </component>

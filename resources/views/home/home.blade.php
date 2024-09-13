@@ -75,7 +75,7 @@
                                 theater, circus skills, illusions, visual arts, narrative and live
                                 original music designed to transport and transform.
                             </p>
-                            <form action="{{route('store_email')}}" method="post" enctype="multipart/form-data">
+                            <form action="{{route('lead.subscribe')}}" method="post" enctype="multipart/form-data">
                                 @csrf
                                 @method('POST')
                                 <div class="white-container mb-2">
@@ -83,7 +83,7 @@
                                         <div class="col-7">
                                             <div class="form-group">
                                                 <label for="email">Register for the mailing list:</label>
-                                                <input type="text" class="form-control" name="email" placeholder="email@email.com">
+                                                <input type="text" class="form-control" name="email" placeholder="email@email.com" required>
                                             </div>
                                         </div>
                                         <div class="col-5">
@@ -93,6 +93,9 @@
                                     </div>
                                     @if(session()->has('email-stored'))
                                         {{session('email-stored')}}
+                                    @endif
+                                    @if (session('error'))
+                                        <p>{{ session('error') }}</p>
                                     @endif
                                 </div>
                             </form>
