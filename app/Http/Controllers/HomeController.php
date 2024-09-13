@@ -69,4 +69,8 @@ class HomeController extends Controller
     {
         return view('home.that-happened');
     }
+    public function photo_gallery()
+    {
+        return view('home.photo-gallery');
+    }
 }

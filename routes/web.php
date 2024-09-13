@@ -31,7 +31,10 @@ Route::get('/reviews/audience', [App\Http\Controllers\HomeController::class, 're
 Route::get('/donate', [App\Http\Controllers\HomeController::class, 'donate'])->name('home.donate');
 Route::get('/contact', [App\Http\Controllers\HomeController::class, 'contact'])->name('home.contact');
 Route::get('/that-happened', [App\Http\Controllers\HomeController::class, 'that_happened'])->name('home.that');
+Route::get('/photo-gallery', [App\Http\Controllers\HomeController::class, 'photo_gallery'])->name('home.gallery');
 
 Route::post('/store-email', [App\Http\Controllers\LeadController::class, 'store'])->name('store_email');
+Route::post('/send-message', [App\Http\Controllers\MessageController::class, 'store'])->name('message.store');
+Route::post('/send-donation', [App\Http\Controllers\DonationController::class, 'store'])->name('donation.store');
 
 

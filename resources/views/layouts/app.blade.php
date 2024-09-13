@@ -107,6 +107,9 @@
                             <a class="nav-link {{ Request::routeIs('home.donate') ? 'active' : '' }}" href="{{route('home.donate')}}">Donate</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link {{ Request::routeIs('home.gallery') ? 'active' : '' }}" href="{{route('home.gallery')}}">Gallery</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link {{ Request::routeIs('home.contact') ? 'active' : '' }}" href="{{route('home.contact')}}">Contact</a>
                         </li>
 
