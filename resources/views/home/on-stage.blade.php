@@ -94,7 +94,6 @@
                             <p class="text-lg raleway-light">
                                 Inspiration drawn from the paintings of Marc Chagall, DOJUMP takes the audience on a playful journey celebrating life, love, color, shape and spirit.
                             </p>
-                            <br>
                         </div>
                         <div class="card-footer">
                             <div class="row width-100">
@@ -125,7 +124,6 @@
                             <p class="text-lg raleway-light">
                                 Tiger Lilly & Sunny Lu is based on the memoirs of Sunny Lu, a beautiful orange Tabby. See the extraordinary human members of DOJUMP create a one-room feline circus.
                             </p>
-                            <br>
                         </div>
                         <div class="card-footer">
                             <div class="row width-100">

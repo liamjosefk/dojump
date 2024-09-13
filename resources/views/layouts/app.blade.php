@@ -49,9 +49,9 @@
                             <a class="nav-link {{ Request::is('/*') ? 'active' : '' }}" href="{{route('home')}}">Home
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link {{ Request::routeIs('home.on_stage') ? 'active' : '' }}" href="{{route('home.on_stage')}}">On-Stage</a>
-                        </li>
+{{--                        <li class="nav-item">--}}
+{{--                            <a class="nav-link {{ Request::routeIs('home.on_stage') ? 'active' : '' }}" href="{{route('home.on_stage')}}">On-Stage</a>--}}
+{{--                        </li>--}}
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle {{ Request::is('services/*') ? 'active' : '' }}" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="servicesDropdown">Services</a>
                             <!-- Dropdown - Services Menu -->
