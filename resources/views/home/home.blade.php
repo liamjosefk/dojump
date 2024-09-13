@@ -231,9 +231,8 @@
                             <h3 class="raleway-light font-black text-3rem width-80 mt-5">
                                 The first screening of <br>
                                 “THAT HAPPENED.” at <br>
-                                PAM CUT’s Tomorrow <br>
-                                Theater Friday April 26th <br>
-                                at 7 pm.
+                                PAM CUT’s <br>
+                                Tomorrow Theater
                             </h3>
                         </div>
                     </div>

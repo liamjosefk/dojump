@@ -39,7 +39,8 @@
         <!-- History & Artist Statement -->
         <div class="container-fluid pl-0 pr-0 pt-5 pb-5 background-content">
             <div class="text-top">
-                <div class="mb-5 pt-5">
+                <h1 class="uppercase raleway-normal font-4em text-primary text-center mt-5">"That Happened"</h1>
+                <div class="mb-5">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-6">
@@ -63,10 +64,18 @@
 
         <!-- That Happened Description -->
         <div class="container-fluid pl-0 pr-0 pt-5 pb-5 gradiant-lav text-center">
-            <h1 class="uppercase raleway-normal font-4em">"That Happened"</h1>
-            <h4 class="raleway-light font-black text-3rem width-100 mt-3">
+
+            <h4 class="raleway-bold font-black text-3rem width-100 mt-3">
                 Robin Lane’s feature length theater-circus-danceumentary.
             </h4>
+
+            <div class="row mt-3">
+                <div class="col-sm-8 offset-sm-2">
+                    <img src="{{asset('storage/images/do-jump-cast.jpg')}}" alt="That Happened Film Release" class="img-responsive width-100">
+                </div>
+            </div>
+
+
             <h4 class="raleway-light font-black text-3rem width-100 mt-3">
                 Original score created by Joan Szymko.
             </h4>

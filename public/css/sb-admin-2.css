@@ -11183,3 +11183,29 @@ body.sidebar-toggled footer.sticky-footer {
 .card-footer {
   background-color:#f5ebff !important;
 }
+
+.review-image {
+  position: relative; /* Establishes a reference for the absolute positioning of the text */
+}
+.review-image img {
+  border-radius: 7px !important;
+}
+
+.review-text {
+  position: absolute;
+  top: 50%; /* Centers vertically */
+  left: 50%; /* Centers horizontally */
+  transform: translate(-50%, -50%); /* Shifts the element back to center */
+  color: white; /* Change the text color as needed */
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent background */
+  padding: 20px;
+  width: 100%; /* Makes the text cover the full width of the image */
+}
+
+.review-text h2 {
+  margin: 0;
+  font-size: 3rem;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+}
