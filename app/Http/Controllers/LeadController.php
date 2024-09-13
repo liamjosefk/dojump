@@ -39,13 +39,13 @@ class LeadController extends Controller
 
             // Check if the response indicates success
             if (isset($response->status) && $response->status === 'subscribed') {
-                return back()->with('success', 'Successfully subscribed!');
+                return back()->with('success', 'Successfully Subscribed!');
             }
 
             // If the response doesn't have the expected status, log it
             Log::error('Unexpected Mailchimp Response: ', ['response' => $response]);
 
-            return back()->with('error', 'Failed to subscribe.');
+            return back()->with('error', 'Failed to Subscribe.');
 
         } catch (\Exception $e) {
             // Check if the error is due to "Member Exists"
