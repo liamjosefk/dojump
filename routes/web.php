@@ -34,6 +34,7 @@ Route::get('/that-happened', [App\Http\Controllers\HomeController::class, 'that_
 Route::get('/photo-gallery', [App\Http\Controllers\HomeController::class, 'photo_gallery'])->name('home.gallery');
 
 Route::post('/store-email', [App\Http\Controllers\LeadController::class, 'store'])->name('store_email');
+Route::post('/mc-subscribe', [App\Http\Controllers\LeadController::class, 'subscribe'])->name('lead.subscribe');
 Route::post('/send-message', [App\Http\Controllers\MessageController::class, 'store'])->name('message.store');
 Route::post('/send-donation', [App\Http\Controllers\DonationController::class, 'store'])->name('donation.store');
 
