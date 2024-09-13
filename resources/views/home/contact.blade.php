@@ -61,11 +61,11 @@
                     <div class="row">
                         <div class="col-sm-6 col-md-4">
                             <label for="name" class="mt-3">Name <span class="text-red">*</span></label>
-                            <input type="text" class="form-control" name="name" placeholder="John Smith">
+                            <input type="text" class="form-control" name="name" placeholder="John Smith" required>
                         </div>
                         <div class="col-sm-6 col-md-4">
                             <label for="email" class="mt-3">Email <span class="text-red">*</span></label>
-                            <input type="text" class="form-control" name="email" placeholder="email@email.com">
+                            <input type="text" class="form-control" name="email" placeholder="email@email.com" required>
                         </div>
                         <div class="col-sm-6 col-md-4">
                             <label for="phone" class="mt-3">Phone</label>
@@ -77,7 +77,7 @@
                         </div>
                         <div class="col-sm-12">
                             <label for="message" class="mt-3">Message <span class="text-red">*</span></label>
-                            <textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
+                            <textarea name="message" id="message" cols="30" rows="10" class="form-control" required></textarea>
                         </div>
                         <div class="col-12 col-sm-6 offset-sm-3 col-md-3 offset-md-9">
                             <button class="btn btn-primary mt-4 btn-100" type="submit">Submit</button>
