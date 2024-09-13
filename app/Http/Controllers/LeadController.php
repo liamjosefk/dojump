@@ -22,7 +22,7 @@ class LeadController extends Controller
     {
         $request->validate(['email' => 'required|email']);
 
-        $listId = '9ccc3b942f';  // Your Mailchimp list ID
+        $listId = 'your-mailchimp-list-id';  // Replace with your actual Mailchimp List ID
 
         try {
             // Attempt to add the email to Mailchimp
@@ -34,8 +34,8 @@ class LeadController extends Controller
             $lead->save();
             session()->flash('email-stored', 'Email Stored');
 
-            // Check if the response indicates success
-            if (is_array($response) && isset($response['id'])) {
+            // Check if the response indicates success (use `status` field to check for "subscribed")
+            if (isset($response->status) && $response->status === 'subscribed') {
                 return back()->with('success', 'Successfully subscribed!');
             }
 
@@ -53,6 +53,7 @@ class LeadController extends Controller
             return back()->with('error', 'Failed to subscribe. Please try again later.');
         }
     }
+
 
 
 
