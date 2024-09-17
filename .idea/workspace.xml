@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a8e8501-d7e4-4b65-bc80-cd5cef4631c3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LeadController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LeadController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/services/corporate-events.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/services/corporate-events.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/admin/modals/logout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/admin/modals/logout.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +170,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hamptonstile" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../skwatercraftrentals" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -256,7 +253,12 @@
       <workItem from="1726176570873" duration="23360000" />
       <workItem from="1726211422688" duration="697000" />
       <workItem from="1726212539611" duration="6037000" />
-      <workItem from="1726254837750" duration="1630000" />
+      <workItem from="1726254837750" duration="2337000" />
+      <workItem from="1726282748425" duration="295000" />
+      <workItem from="1726289249154" duration="3258000" />
+      <workItem from="1726355703833" duration="607000" />
+      <workItem from="1726517878134" duration="34648000" />
+      <workItem from="1726561974849" duration="1619000" />
     </task>
     <servers />
   </component>

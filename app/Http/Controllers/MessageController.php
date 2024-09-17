@@ -8,6 +8,12 @@ use Illuminate\Http\Request;
 
 class MessageController extends Controller
 {
+
+    public function index()
+    {
+        return view('admin.messages.index');
+    }
+
     public function store() {
         $message = new Message();
         $message->name = request('name');

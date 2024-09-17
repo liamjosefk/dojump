@@ -61,152 +61,29 @@
 
 
                 <!-- Image -->
-                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#lightboxModal1">
-                        <img
-                                src="{{asset('storage/images/gallery/crew-outside-thumb.jpg')}}"
-                                class="w-100 shadow-1-strong rounded mb-4"
-                                alt="Boat on Calm Water"
-                        />
-                    </a>
-                    <!-- Lightbox Modal -->
-                    <div class="modal fade" id="lightboxModal1" tabindex="-1" aria-labelledby="lightboxModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <img src="{{asset('storage/images/gallery/crew-outside.jpg')}}" class="w-100" />
+                @foreach($images as $image)
+                    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#lightboxModal1">
+                            <img
+                                    src="{{ asset('storage/' . $image->image_thumb) }}"
+                                    class="w-100 shadow-1-strong rounded mb-4"
+                                    alt="Boat on Calm Water"
+                            />
+                        </a>
+                        <!-- Lightbox Modal -->
+                        <div class="modal fade" id="lightboxModal1" tabindex="-1" aria-labelledby="lightboxModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <img src="{{ asset('storage/' . $image->image) }}" class="w-100" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                @endforeach
                 <!-- /Image -->
-                <!-- Image -->
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#lightboxModal2">
-                        <img
-                                src="{{asset('storage/images/gallery/kids-thumb.jpg')}}"
-                                class="w-100 shadow-1-strong rounded mb-4"
-                                alt="Boat on Calm Water"
-                        />
-                    </a>
-                    <!-- Lightbox Modal -->
-                    <div class="modal fade" id="lightboxModal2" tabindex="-1" aria-labelledby="lightboxModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <img src="{{asset('storage/images/gallery/kids.jpg')}}" class="w-100" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /Image -->
-                <!-- Image -->
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#lightboxModal3">
-                        <img
-                                src="{{asset('storage/images/gallery/the-crew-thumb.jpg')}}"
-                                class="w-100 shadow-1-strong rounded mb-4"
-                                alt="Boat on Calm Water"
-                        />
-                    </a>
-                    <!-- Lightbox Modal -->
-                    <div class="modal fade" id="lightboxModal3" tabindex="-1" aria-labelledby="lightboxModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <img src="{{asset('storage/images/gallery/the-crew.jpg')}}" class="w-100" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /Image -->
-                <!-- Image -->
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#lightboxModal4">
-                        <img
-                                src="{{asset('storage/images/gallery/stage-ladder-thumb.jpg')}}"
-                                class="w-100 shadow-1-strong rounded mb-4"
-                                alt="Boat on Calm Water"
-                        />
-                    </a>
-                    <!-- Lightbox Modal -->
-                    <div class="modal fade" id="lightboxModal4" tabindex="-1" aria-labelledby="lightboxModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <img src="{{asset('storage/images/gallery/stage-ladder.jpg')}}" class="w-100" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /Image -->
-                <!-- Image -->
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#lightboxModal5">
-                        <img
-                                src="{{asset('storage/images/gallery/entusiasmo-thumb.jpg')}}"
-                                class="w-100 shadow-1-strong rounded mb-4"
-                                alt="Boat on Calm Water"
-                        />
-                    </a>
-                    <!-- Lightbox Modal -->
-                    <div class="modal fade" id="lightboxModal5" tabindex="-1" aria-labelledby="lightboxModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <img src="{{asset('storage/images/gallery/entusiasmo.jpg')}}" class="w-100" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /Image -->
-                <!-- Image -->
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#lightboxModal6">
-                        <img
-                                src="{{asset('storage/images/gallery/studio-thumb.jpg')}}"
-                                class="w-100 shadow-1-strong rounded mb-4"
-                                alt="Boat on Calm Water"
-                        />
-                    </a>
-                    <!-- Lightbox Modal -->
-                    <div class="modal fade" id="lightboxModal6" tabindex="-1" aria-labelledby="lightboxModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <img src="{{asset('storage/images/gallery/studio.jpg')}}" class="w-100" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /Image -->
-                <!-- Image -->
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#lightboxModal7">
-                        <img
-                                src="{{asset('storage/images/gallery/heights-thumb.jpg')}}"
-                                class="w-100 shadow-1-strong rounded mb-4"
-                                alt="Boat on Calm Water"
-                        />
-                    </a>
-                    <!-- Lightbox Modal -->
-                    <div class="modal fade" id="lightboxModal7" tabindex="-1" aria-labelledby="lightboxModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <img src="{{asset('storage/images/gallery/heights.jpg')}}" class="w-100" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /Image -->
+
 
 
             </div>

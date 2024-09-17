@@ -10,11 +10,20 @@ use Illuminate\Support\Facades\Log;
 
 class LeadController extends Controller
 {
+
     protected $mailchimp;
 
     public function __construct(MailchimpService $mailchimp)
     {
         $this->mailchimp = $mailchimp;
+    }
+
+
+    public function index()
+    {
+        return view('admin.mailchimp.index', [
+            'leads' => Lead::all()
+        ]);
     }
 
 
@@ -34,7 +43,14 @@ class LeadController extends Controller
             // Store email locally in the database
             $lead = new Lead();
             $lead->email = $request->email;
+            if ($request->first_name) {
+                $lead->first_name = $request->first_name;
+            }
+            if ($request->last_name) {
+                $lead->last_name = $request->last_name;
+            }
             $lead->save();
+
             session()->flash('email-stored', 'Email Stored');
 
             // Check if the response indicates success

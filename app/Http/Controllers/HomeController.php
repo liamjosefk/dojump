@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Image;
+use App\Models\Project;
+use App\Models\Video;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -39,7 +42,9 @@ class HomeController extends Controller
     }
     public function portfolio_stage()
     {
-        return view('home.portfolio.stage');
+        return view('home.portfolio.stage', [
+            'projects' => Project::latest()->get()
+        ]);
     }
     public function portfolio_photo()
     {
@@ -47,7 +52,9 @@ class HomeController extends Controller
     }
     public function portfolio_video()
     {
-        return view('home.portfolio.video');
+        return view('home.portfolio.video', [
+            'videos' => Video::latest()->get()
+        ]);
     }
     public function reviews_critic()
     {
@@ -71,6 +78,8 @@ class HomeController extends Controller
     }
     public function photo_gallery()
     {
-        return view('home.photo-gallery');
+        return view('home.photo-gallery', [
+            'images' => Image::latest()->get()
+        ]);
     }
 }
