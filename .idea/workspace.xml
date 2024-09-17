@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a8e8501-d7e4-4b65-bc80-cd5cef4631c3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/components/admin/modals/logout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/admin/modals/logout.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="5a8e8501-d7e4-4b65-bc80-cd5cef4631c3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
