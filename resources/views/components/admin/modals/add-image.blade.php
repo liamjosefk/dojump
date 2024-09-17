@@ -14,16 +14,16 @@
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-12">
-                                <label for="image">Image</label>
-                                <input type="file" name="image" class="form-control-file">
+                                <label for="image">Image <span class="text-red">*</span></label>
+                                <input type="file" name="image" class="form-control-file" required>
                             </div>
                             <div class="col-12">
-                                <label for="image_thumb" class="mt-4">Thumbnail Image <small>(max-width: 400px)</small></label>
-                                <input type="file" name="image_thumb" class="form-control-file">
+                                <label for="image_thumb" class="mt-4">Thumbnail Image <span class="text-red">*</span> <small>(max-width: 400px)</small></label>
+                                <input type="file" name="image_thumb" class="form-control-file" required>
                             </div>
                             <div class="col-12">
-                                <label for="alt" class="mt-4">Alt Text</label>
-                                <input type="text" class="form-control" name="alt">
+                                <label for="alt" class="mt-4">Alt Text <span class="text-red">*</span></label>
+                                <input type="text" class="form-control" name="alt" required>
                             </div>
                         </div>
                     </div>
