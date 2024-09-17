@@ -10,11 +10,18 @@ use Illuminate\Support\Facades\Log;
 
 class LeadController extends Controller
 {
+
     protected $mailchimp;
 
     public function __construct(MailchimpService $mailchimp)
     {
         $this->mailchimp = $mailchimp;
+    }
+
+
+    public function index()
+    {
+        return view('admin.mailchimp.index');
     }
 
 
