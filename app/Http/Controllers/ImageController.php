@@ -39,7 +39,7 @@ class ImageController extends Controller
         $image->save();
 
         // Redirect or return success message
-        return back()->with('success', 'Image uploaded successfully!');
+        return redirect()->route('project.index')->with('success', 'Image uploaded successfully!');
     }
 
 
@@ -69,7 +69,7 @@ class ImageController extends Controller
         // Save the updated image data
         $image->save();
 
-        return back()->with('success', 'Image updated successfully!');
+        return redirect()->route('project.index')->with('success', 'Image updated successfully!');
     }
 
 

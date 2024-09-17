@@ -46,7 +46,7 @@ class UserController extends Controller
             Log::info('User created successfully', ['user_id' => $user->id]);
 
             // Redirect or show success message
-            return redirect()->back()->with('success', 'User created successfully!');
+            return redirect()->route('user.index')->with('success', 'User created successfully!');
         } catch (\Exception $e) {
             // Log the exception
             Log::error('Error creating user', [
