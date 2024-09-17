@@ -6,3 +6,7 @@
 body {
   padding-top: 56px;
 }
+
+nav.navbar.navbar-light {
+  z-index: 9999 !important;
+}
