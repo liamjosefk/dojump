@@ -63,7 +63,7 @@
                 <!-- Image -->
                 @foreach($images as $image)
                     <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#lightboxModal1">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#lightboxModal{{$image->id}}">
                             <img
                                     src="{{ asset('storage/' . $image->image_thumb) }}"
                                     class="w-100 shadow-1-strong rounded mb-4"
@@ -71,7 +71,7 @@
                             />
                         </a>
                         <!-- Lightbox Modal -->
-                        <div class="modal fade" id="lightboxModal1" tabindex="-1" aria-labelledby="lightboxModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="lightboxModal{{$image->id}}" tabindex="-1" aria-labelledby="lightboxModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-body">
