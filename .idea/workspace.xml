@@ -7,9 +7,13 @@
     <list default="true" id="5a8e8501-d7e4-4b65-bc80-cd5cef4631c3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/projects/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/projects/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/admin/modals/add-video.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/admin/modals/add-video.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ImageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ImageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/gallery/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/gallery/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/admin/modals/add-image.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/admin/modals/add-image.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/admin/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/admin/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/admin/topbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/admin/topbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/photo-gallery.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/photo-gallery.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/image.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/image.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,7 +265,7 @@
       <workItem from="1726282748425" duration="295000" />
       <workItem from="1726289249154" duration="3258000" />
       <workItem from="1726355703833" duration="607000" />
-      <workItem from="1726517878134" duration="31662000" />
+      <workItem from="1726517878134" duration="34506000" />
     </task>
     <servers />
   </component>

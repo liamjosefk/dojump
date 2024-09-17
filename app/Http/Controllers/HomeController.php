@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Image;
 use App\Models\Project;
 use App\Models\Video;
 use Illuminate\Http\Request;
@@ -77,6 +78,8 @@ class HomeController extends Controller
     }
     public function photo_gallery()
     {
-        return view('home.photo-gallery');
+        return view('home.photo-gallery', [
+            'images' => Image::latest()->get()
+        ]);
     }
 }

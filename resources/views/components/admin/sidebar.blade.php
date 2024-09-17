@@ -35,18 +35,18 @@
 
 
     <!-- Nav Item - Pages Collapse Menu -->
-    <li class="nav-item {{ Request::is('admin/messages*') ? 'active' : '' }}">
-        <a class="nav-link {{ Request::is(['admin/dashboard*', 'admin/reviews*', 'admin/projects*', 'admin/donations*', 'admin/mailchimp*', 'admin/image-gallery*', 'admin/users*']) ? 'collapsed' : '' }}" href="#" data-toggle="collapse" data-target="#collapseMessage" aria-expanded="true" aria-controls="collapseMessage">
-            <i class="fas fa-fw fa-envelope"></i>
-            <span>Messages</span>
-        </a>
-        <div id="collapseMessage" class="collapse {{ Request::is('admin/messages*') ? 'show' : '' }}" aria-labelledby="headingMessage" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Message Menu:</h6>
-                <a class="collapse-item {{ Request::is('admin/messages*') ? 'active' : '' }}" href="{{route('message.index')}}">View Messages</a>
-            </div>
-        </div>
-    </li>
+{{--    <li class="nav-item {{ Request::is('admin/messages*') ? 'active' : '' }}">--}}
+{{--        <a class="nav-link {{ Request::is(['admin/dashboard*', 'admin/reviews*', 'admin/projects*', 'admin/donations*', 'admin/mailchimp*', 'admin/image-gallery*', 'admin/users*']) ? 'collapsed' : '' }}" href="#" data-toggle="collapse" data-target="#collapseMessage" aria-expanded="true" aria-controls="collapseMessage">--}}
+{{--            <i class="fas fa-fw fa-envelope"></i>--}}
+{{--            <span>Messages</span>--}}
+{{--        </a>--}}
+{{--        <div id="collapseMessage" class="collapse {{ Request::is('admin/messages*') ? 'show' : '' }}" aria-labelledby="headingMessage" data-parent="#accordionSidebar">--}}
+{{--            <div class="bg-white py-2 collapse-inner rounded">--}}
+{{--                <h6 class="collapse-header">Message Menu:</h6>--}}
+{{--                <a class="collapse-item {{ Request::is('admin/messages*') ? 'active' : '' }}" href="{{route('message.index')}}">View Messages</a>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </li>--}}
 
     <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item {{ Request::is('admin/projects*') ? 'active' : '' }}">
@@ -114,19 +114,19 @@
         </div>
     </li>
     <!-- Nav Item - Pages Collapse Menu -->
-    <li class="nav-item {{ Request::is('admin/reviews*') ? 'active' : '' }}">
-        <a class="nav-link {{ Request::is(['admin/dashboard*', 'admin/messages*', 'admin/donations*', 'admin/projects*', 'admin/mailchimp*', 'admin/image-gallery*', 'admin/users*']) ? 'collapsed' : '' }}" href="#" data-toggle="collapse" data-target="#collapseReview" aria-expanded="true" aria-controls="collapseReview">
-            <i class="fas fa-fw fa-pen"></i>
-            <span>Reviews</span>
-        </a>
-        <div id="collapseReview" class="collapse {{ Request::is('admin/reviews*') ? 'show' : '' }}" aria-labelledby="headingReview" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Review Menu:</h6>
-                <a class="collapse-item {{ Request::is('admin/reviews*') ? 'active' : '' }}" href="{{route('review.index')}}">All Reviews</a>
-                <a class="collapse-item" href="#" data-toggle="modal" data-target="#addReviewModal">Add Review</a>
-            </div>
-        </div>
-    </li>
+{{--    <li class="nav-item {{ Request::is('admin/reviews*') ? 'active' : '' }}">--}}
+{{--        <a class="nav-link {{ Request::is(['admin/dashboard*', 'admin/messages*', 'admin/donations*', 'admin/projects*', 'admin/mailchimp*', 'admin/image-gallery*', 'admin/users*']) ? 'collapsed' : '' }}" href="#" data-toggle="collapse" data-target="#collapseReview" aria-expanded="true" aria-controls="collapseReview">--}}
+{{--            <i class="fas fa-fw fa-pen"></i>--}}
+{{--            <span>Reviews</span>--}}
+{{--        </a>--}}
+{{--        <div id="collapseReview" class="collapse {{ Request::is('admin/reviews*') ? 'show' : '' }}" aria-labelledby="headingReview" data-parent="#accordionSidebar">--}}
+{{--            <div class="bg-white py-2 collapse-inner rounded">--}}
+{{--                <h6 class="collapse-header">Review Menu:</h6>--}}
+{{--                <a class="collapse-item {{ Request::is('admin/reviews*') ? 'active' : '' }}" href="{{route('review.index')}}">All Reviews</a>--}}
+{{--                <a class="collapse-item" href="#" data-toggle="modal" data-target="#addReviewModal">Add Review</a>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </li>--}}
 
 
 
