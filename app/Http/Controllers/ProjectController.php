@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\Project;
+use App\Models\Video;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -10,12 +12,12 @@ class ProjectController extends Controller
 {
     public function index()
     {
-        // Fetch combined data
+        // Fetch combined data including the 'image' field
         $projects = DB::table('projects')
-            ->select('title', 'description', DB::raw("'Stage' as type"));
+            ->select('title', 'description', 'image', 'id', 'link', DB::raw("'Stage' as type")); // Add 'image'
 
         $videos = DB::table('videos')
-            ->select('title', 'description', DB::raw("'Video' as type"));
+            ->select('title', 'description', 'image', 'id', 'link', DB::raw("'Video' as type")); // Add 'image'
 
         $combined = $projects->union($videos)->get();
 
@@ -23,6 +25,7 @@ class ProjectController extends Controller
             'combinedData' => $combined
         ]);
     }
+
     public function add_stage(Request $request)
     {
         // Validate the input
@@ -41,7 +44,7 @@ class ProjectController extends Controller
 
         // Handle image upload
         if ($request->hasFile('image')) {
-            $imagePath = $request->file('image')->store('images', 'public'); // Save image in 'public/images'
+            $imagePath = $request->file('image')->store('project-images', 'public'); // Save image in 'public/images'
             $project->image = $imagePath;
         }
 
@@ -81,6 +84,62 @@ class ProjectController extends Controller
         // Flash a success message
         return redirect()->route('project.index')->with('success', 'Video added successfully!');
     }
+
+    public function update_stage(Request $request, Project $project)
+    {
+        // Validate the input
+        $request->validate([
+            'title' => 'required|string|max:255',
+            'description' => 'required|string',
+            'link' => 'nullable|url',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
+        ]);
+
+        // Update the project details
+        $project->update([
+            'title' => $request->title,
+            'description' => $request->description,
+            'link' => $request->link,
+        ]);
+
+        // Handle image upload if provided
+        if ($request->hasFile('image')) {
+            $imagePath = $request->file('image')->store('images/project-images', 'public'); // Save image in 'public/images'
+            $project->image = $imagePath;
+            $project->save(); // Save after updating image
+        }
+
+        return back()->with('success', 'Project updated successfully!');
+    }
+
+    public function update_video(Request $request, Video $video)
+    {
+        // Validate the input
+        $request->validate([
+            'title' => 'required|string|max:255',
+            'description' => 'nullable|string',
+            'link' => 'required|url',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
+        ]);
+
+        // Update the video details
+        $video->update([
+            'title' => $request->title,
+            'description' => $request->description,
+            'link' => $request->link,
+        ]);
+
+        // Handle image upload if provided
+        if ($request->hasFile('image')) {
+            $imagePath = $request->file('image')->store('images/video-images', 'public'); // Save image in 'public/images/video-images'
+            $video->image = $imagePath;
+            $video->save(); // Save after updating image
+        }
+
+        return back()->with('success', 'Video updated successfully!');
+    }
+
+
 
 
 

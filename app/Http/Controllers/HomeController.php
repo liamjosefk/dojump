@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Project;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -39,7 +40,9 @@ class HomeController extends Controller
     }
     public function portfolio_stage()
     {
-        return view('home.portfolio.stage');
+        return view('home.portfolio.stage', [
+            'projects' => Project::latest()->get()
+        ]);
     }
     public function portfolio_photo()
     {

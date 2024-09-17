@@ -7,4 +7,5 @@ Route::get('/admin/projects/stage', [App\Http\Controllers\ProjectController::cla
 Route::post('/admin/projects/add-stage', [App\Http\Controllers\ProjectController::class, 'add_stage'])->name('project.add_stage');
 Route::post('/admin/projects/add-video', [App\Http\Controllers\ProjectController::class, 'add_video'])->name('project.add_video');
 
-Route::get('/admin/projects/{project}/update', [App\Http\Controllers\ProjectController::class, 'update'])->name('project.update');
+Route::put('/admin/projects/{project}/update-stage', [App\Http\Controllers\ProjectController::class, 'update_stage'])->name('project.update_stage');
+Route::put('/admin/projects/{project}/update-video', [App\Http\Controllers\ProjectController::class, 'update_video'])->name('project.update_video');
