@@ -1,9 +1,7 @@
 <div class="modal fade mt-5" id="addUserModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
-        <form action="#" method="post">
+        <form action="{{ route('admin.user.store') }}" method="POST">
             @csrf
-            @method('POST')
-
             <div class="form-group">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -15,20 +13,20 @@
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-12">
-                                <label for="title">Title</label>
-                                <input type="text" class="form-control" name="title">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" class="form-control" required>
                             </div>
                             <div class="col-12">
-                                <label for="description">Description</label>
-                                <textarea name="description" id="" cols="30" rows="10" class="form-control"></textarea>
+                                <label for="email" class="mt-3">Email</label>
+                                <input type="email" name="email" class="form-control" required>
                             </div>
                             <div class="col-12">
-                                <label for="image">Image</label>
-                                <input type="image" name="image" class="form-control-file">
+                                <label for="password" class="mt-3">Password</label>
+                                <input type="password" name="password" class="form-control" required>
                             </div>
                             <div class="col-12">
-                                <label for="link">Link</label>
-                                <input type="image" name="link" class="form-control-file">
+                                <label for="password_confirmation" class="mt-3">Confirm Password</label>
+                                <input type="password" name="password_confirmation" class="form-control" required>
                             </div>
                         </div>
                     </div>
@@ -44,6 +42,8 @@
                     </div>
                 </div>
             </div>
+
         </form>
+
     </div>
 </div>
