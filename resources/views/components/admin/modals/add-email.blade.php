@@ -1,6 +1,6 @@
 <div class="modal fade mt-5" id="addEmailModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
-        <form action="#" method="post">
+        <form action="{{route('lead.subscribe')}}" method="post">
             @csrf
             @method('POST')
 
@@ -15,20 +15,16 @@
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-12">
-                                <label for="title">Title</label>
-                                <input type="text" class="form-control" name="title">
+                                <label for="email">Email <span class="text-red">*</span></label>
+                                <input type="text" class="form-control" name="email" required>
                             </div>
-                            <div class="col-12">
-                                <label for="description">Description</label>
-                                <textarea name="description" id="" cols="30" rows="10" class="form-control"></textarea>
+                            <div class="col-6">
+                                <label for="first_name" class="mt-2">First Name</label>
+                                <input type="text" name="first_name" class="form-control">
                             </div>
-                            <div class="col-12">
-                                <label for="image">Image</label>
-                                <input type="image" name="image" class="form-control-file">
-                            </div>
-                            <div class="col-12">
-                                <label for="link">Link</label>
-                                <input type="image" name="link" class="form-control-file">
+                            <div class="col-6">
+                                <label for="last_name" class="mt-2">Last Name</label>
+                                <input type="text" name="last_name" class="form-control">
                             </div>
                         </div>
                     </div>
