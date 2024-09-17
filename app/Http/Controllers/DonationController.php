@@ -25,7 +25,7 @@ class DonationController extends Controller
         $donation->donation = request('donation');
         $donation->message = request('message');
         $donation->save();
-        session()->flash('message-sent', 'You Donation has been sent.');
+        session()->flash('message-sent', 'Thank you for your donation!');
         return back();
     }
 
