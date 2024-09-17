@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a8e8501-d7e4-4b65-bc80-cd5cef4631c3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/donation.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/donation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/image.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/image.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/lead.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/lead.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/message.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/message.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/project.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/project.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/review.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/review.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/admin/modals/logout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/admin/modals/logout.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
