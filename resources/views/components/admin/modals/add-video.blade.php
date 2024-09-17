@@ -32,24 +32,24 @@
                             </span>
                                 @enderror
                             </div>
-                            <div class="col-12">
-                                <label for="description" class="mt-3">Description</label>
-                                <textarea name="description" cols="30" rows="10" class="form-control @error('description') is-invalid @enderror">{{ old('description') }}</textarea>
-                                @error('description')
-                                <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                                @enderror
-                            </div>
-                            <div class="col-12">
-                                <label for="image" class="mt-3">Image</label>
-                                <input type="file" name="image" class="form-control-file @error('image') is-invalid @enderror">
-                                @error('image')
-                                <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                                @enderror
-                            </div>
+{{--                            <div class="col-12">--}}
+{{--                                <label for="description" class="mt-3">Description</label>--}}
+{{--                                <textarea name="description" cols="30" rows="10" class="form-control @error('description') is-invalid @enderror">{{ old('description') }}</textarea>--}}
+{{--                                @error('description')--}}
+{{--                                <span class="invalid-feedback" role="alert">--}}
+{{--                                <strong>{{ $message }}</strong>--}}
+{{--                            </span>--}}
+{{--                                @enderror--}}
+{{--                            </div>--}}
+{{--                            <div class="col-12">--}}
+{{--                                <label for="image" class="mt-3">Image</label>--}}
+{{--                                <input type="file" name="image" class="form-control-file @error('image') is-invalid @enderror">--}}
+{{--                                @error('image')--}}
+{{--                                <span class="invalid-feedback" role="alert">--}}
+{{--                                <strong>{{ $message }}</strong>--}}
+{{--                            </span>--}}
+{{--                                @enderror--}}
+{{--                            </div>--}}
                         </div>
                     </div>
                     <div class="modal-footer">

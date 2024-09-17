@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Project;
+use App\Models\Video;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -50,7 +51,9 @@ class HomeController extends Controller
     }
     public function portfolio_video()
     {
-        return view('home.portfolio.video');
+        return view('home.portfolio.video', [
+            'videos' => Video::latest()->get()
+        ]);
     }
     public function reviews_critic()
     {

@@ -67,19 +67,19 @@ class ProjectController extends Controller
         ]);
 
         // Create a new Project entry (assuming 'projects' is the correct table)
-        $project = new Project();
-        $project->title = $request->input('title');
-        $project->description = $request->input('description');
-        $project->link = $request->input('link');
+        $video = new Video();
+        $video->title = $request->input('title');
+        $video->description = $request->input('description');
+        $video->link = $request->input('link');
 
         // Handle image upload, if exists
         if ($request->hasFile('image')) {
             $imagePath = $request->file('image')->store('images/project-images', 'public'); // Save image in 'public/images'
-            $project->image = $imagePath;
+            $video->image = $imagePath;
         }
 
         // Save the project
-        $project->save();
+        $video->save();
 
         // Flash a success message
         return redirect()->route('project.index')->with('success', 'Video added successfully!');

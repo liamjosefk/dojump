@@ -59,27 +59,13 @@
                 <div class="col-sm-6">
                     <iframe title="vimeo-player" src="https://player.vimeo.com/video/516459392?h=74ead5a215" width="100%" height="360" frameborder="0"    allowfullscreen></iframe>
                 </div>
-                <div class="col-sm-4">
-                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/186475936?h=bc82596ace" width="100%" height="360" frameborder="0"    allowfullscreen></iframe>
-                </div>
-                <div class="col-sm-4">
-                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/186475613?h=d2e218a15d" width="100%" height="360" frameborder="0"    allowfullscreen></iframe>
-                </div>
-                <div class="col-sm-4">
-                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/186474903?h=ffece9ae16" width="100%" height="360" frameborder="0"    allowfullscreen></iframe>
-                </div>
-                <div class="col-sm-4">
-                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/186474902?h=0fa7a22a22" width="100%" height="360" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="col-sm-4">
-                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/186474900?h=3f10428d51" width="100%" height="360" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="col-sm-4">
-                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/186474838?h=2409935a45" width="100%" height="360" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="col-sm-4">
-                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/167807246?h=0542cd7356" width="100%" height="360" frameborder="0" allowfullscreen></iframe>
-                </div>
+
+                @foreach($videos as $video)
+                    <div class="col-sm-4">
+                        <iframe title="vimeo-player" src="{{$video->link}}" width="100%" height="360" frameborder="0"    allowfullscreen></iframe>
+                    </div>
+                @endforeach
+
             </div>
         </div>
         <!-- /Videos -->
