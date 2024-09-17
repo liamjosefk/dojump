@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a8e8501-d7e4-4b65-bc80-cd5cef4631c3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/auth.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/donation.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/donation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/image.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/image.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/lead.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/lead.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/message.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/message.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/project.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/project.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/review.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/review.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

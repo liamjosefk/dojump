@@ -6,4 +6,4 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/admin/reviews', [App\Http\Controllers\ReviewController::class, 'index'])->name('review.index');
+Route::get('/admin/reviews', [App\Http\Controllers\ReviewController::class, 'index'])->name('review.index')->middleware('auth');
