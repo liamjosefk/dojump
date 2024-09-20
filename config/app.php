@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'DoJump'),
 
     /*
     |--------------------------------------------------------------------------
@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'https://dojump.org'),
 
     'asset_url' => env('ASSET_URL', '/'),
 
@@ -153,6 +153,9 @@ return [
     | this array to grant expanded functionality to your applications.
     |
     */
+
+    'google_analytics_credentials' => env('GOOGLE_APPLICATION_CREDENTIALS', './dojump-analytics.json'),
+    'ga4_property_id' => env('GA4_PROPERTY_ID'),
 
     'providers' => [
 
