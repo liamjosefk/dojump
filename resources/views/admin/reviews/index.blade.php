@@ -56,7 +56,7 @@
                                                 {{ \Illuminate\Support\Str::limit($review_project->title, 10, '[...]') }}
                                             @endforeach
                                         @else
-                                            &nbsp;
+                                            General
                                         @endif
                                     @endif
                                 </td>

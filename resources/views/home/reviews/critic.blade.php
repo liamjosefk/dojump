@@ -64,96 +64,80 @@
         <!-- Critic Reviews -->
         <div class="container mt-5">
             <div class="row">
-                <div class="col-sm-4">
-                    <div class="card shadow mt-4">
-                        <div class="card-img-before">
-                            <img src="{{asset('storage/images/review-ahhh.jpg')}}" class="d-block img-fluid w-100" alt="...">
-                        </div>
-                        <div class="card-header">
-                            <h3>The NY Times</h3>
-                        </div>
-                        <div class="card-body">
-                            <p class="text-lg raleway-light">
-                                Take Oohs and Ahs and Mix with Giggles
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <div class="row width-100">
-                                <div class="col-sm-6">
-                                    <a href="https://www.nytimes.com/2000/04/20/theater/theater-review-take-oohs-and-ahs-and-mix-with-giggles.html" target="_blank" class="btn btn-outline-primary btn-100 mt-3">
-                                        Read Review
-                                        <i class="fa fa-chevron-right"></i>
-                                    </a>
-                                </div>
-                                <div class="col-sm-6">
-                                    <a href="{{route('home.contact')}}" class="btn btn-outline-secondary btn-100 mt-3">
-                                        Contact Us
-                                    </a>
+
+                @foreach($reviews as $review)
+                    <div class="col-sm-4">
+                        <div class="card shadow mt-4">
+                            <div class="card-img-before">
+                                <img src="{{asset('storage/' . $review->image)}}" class="d-block img-fluid w-100" alt="...">
+                            </div>
+                            <div class="card-header">
+                                <h3>{{$review->author}}</h3>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-lg raleway-light">
+                                    {{$review->title}}
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="row width-100">
+                                    <div class="col-sm-6">
+                                        {{--                                    <a href="https://www.nytimes.com/2000/04/20/theater/theater-review-take-oohs-and-ahs-and-mix-with-giggles.html" target="_blank" class="btn btn-outline-primary btn-100 mt-3">--}}
+                                        {{--                                        Read Review--}}
+                                        {{--                                        <i class="fa fa-chevron-right"></i>--}}
+                                        {{--                                    </a>--}}
+                                        <a href="#" data-toggle="modal" data-target="#review{{$review->id}}" class="btn btn-outline-primary btn-100 mt-3">
+                                            Read Review
+                                            <i class="fa fa-chevron-right"></i>
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <a href="{{route('home.contact')}}" class="btn btn-outline-secondary btn-100 mt-3">
+                                            Contact Us
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card shadow mt-4">
-                        <div class="card-img-before">
-                            <img src="{{asset('storage/images/review-trapeze.jpg')}}" class="d-block img-fluid w-100" alt="...">
-                        </div>
-                        <div class="card-header">
-                            <h3>Oregon Live</h3>
-                        </div>
-                        <div class="card-body">
-                            <p class="text-lg raleway-light">
-                                Portland's Do Jump! pursues happiness with lightness
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <div class="row width-100">
-                                <div class="col-sm-6">
-                                    <a href="https://www.oregonlive.com/performance/2010/12/review_dojump_pursues_happines.html" target="_blank" class="btn btn-outline-primary btn-100 mt-3">
-                                        Read Review
-                                        <i class="fa fa-chevron-right"></i>
-                                    </a>
-                                </div>
-                                <div class="col-sm-6">
-                                    <a href="{{route('home.contact')}}" class="btn btn-outline-secondary btn-100 mt-3">
-                                        Contact Us
-                                    </a>
-                                </div>
+
+                        <div class="modal fade mt-5" id="review{{$review->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <form action="{{ route('admin.user.store') }}" method="POST">
+                                    @csrf
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title" id="exampleModalLabel">{{$review->author}}</h3>
+                                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">×</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h3 class="text-gray-500">{{$review->title}}</h3>
+                                            <h5 class="text-gray-300">
+                                                {!! $review->content !!}
+                                            </h5>
+                                        </div>
+                                        <div class="modal-footer pb-5">
+                                            <div class="row width-100">
+                                                <div class="col-6">
+                                                    <button class="btn btn-secondary btn-100" type="button" data-dismiss="modal">Close</button>
+                                                </div>
+                                                <div class="col-6">
+                                                    <a href="{{$review->link}}" target="_blank" class="btn btn-primary btn-100">
+                                                        Read at {{$review->author}}
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card shadow mt-4">
-                        <div class="card-img-before">
-                            <img src="{{asset('storage/images/review-tiger-lilly.jpg')}}" class="d-block img-fluid w-100" alt="...">
-                        </div>
-                        <div class="card-header">
-                            <h3>Willamette Week</h3>
-                        </div>
-                        <div class="card-body">
-                            <p class="text-lg raleway-light">
-                                Do Jump! creates catnip out of physical theater.
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <div class="row width-100">
-                                <div class="col-sm-6">
-                                    <a href="https://www.wweek.com/portland/article-11413-i-tiger-lilly-and-sunny-lu-i-do-jump.html" target="_blank" class="btn btn-outline-primary btn-100 mt-3">
-                                        Read Review
-                                        <i class="fa fa-chevron-right"></i>
-                                    </a>
-                                </div>
-                                <div class="col-sm-6">
-                                    <a href="{{route('home.contact')}}" class="btn btn-outline-secondary btn-100 mt-3">
-                                        Contact Us
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
+
+
             </div>
         </div>
         <!-- /Critic Reviews -->
