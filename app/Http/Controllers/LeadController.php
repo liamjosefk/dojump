@@ -35,8 +35,22 @@ class LeadController extends Controller
         $listId = '1e8eadf259';  // Your Mailchimp List ID
 
         try {
+            // Prepare the data for Mailchimp
+            $data = [
+                'email_address' => $request->input('email'),
+                'status' => 'subscribed',
+            ];
+
+            // Add first_name and last_name if available
+            if ($request->has('first_name')) {
+                $data['merge_fields']['FNAME'] = $request->input('first_name');
+            }
+            if ($request->has('last_name')) {
+                $data['merge_fields']['LNAME'] = $request->input('last_name');
+            }
+
             // Attempt to add the email to Mailchimp
-            $response = $this->mailchimp->addToList($request->email, $listId);
+            $response = $this->mailchimp->addToList($data, $listId);
 
             // Log the full response from Mailchimp to inspect its structure
             Log::info('Mailchimp Response: ', ['response' => $response]);
@@ -47,22 +61,22 @@ class LeadController extends Controller
                 // Store email locally in the database only if Mailchimp subscription was successful
                 $lead = new Lead();
                 $lead->email = $request->email;
-                if ($request->first_name) {
+                if ($request->has('first_name')) {
                     $lead->first_name = $request->first_name;
                 }
-                if ($request->last_name) {
+                if ($request->has('last_name')) {
                     $lead->last_name = $request->last_name;
                 }
                 $lead->save();
 
                 // Flash success message
                 session()->flash('email-stored', 'Email Stored');
-                return back()->with('success', 'Successfully Subscribed!');
+                return ['status' => 'success', 'message' => 'Successfully Subscribed!'];
 
             } else {
                 // If the response doesn't indicate success, log the error and show failure message
                 Log::error('Unexpected Mailchimp Response: ', ['response' => $response]);
-                return back()->with('error', 'Failed to subscribe. Please try again.');
+                return ['status' => 'error', 'message' => 'Failed to subscribe. Please try again.'];
             }
 
         } catch (\Exception $e) {
@@ -72,13 +86,14 @@ class LeadController extends Controller
 
             // Check if the error is related to the "Member Exists" issue
             if (strpos($errorMessage, 'Member Exists') !== false) {
-                return back()->with('info', 'You are already subscribed!');
+                return ['status' => 'info', 'message' => 'You are already subscribed!'];
             }
 
             // Return a generic error message for other exceptions
-            return back()->with('error', 'Failed to subscribe. Please try again later.');
+            return ['status' => 'error', 'message' => 'Failed to subscribe. Please try again later.'];
         }
     }
+
 
 
 
