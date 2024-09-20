@@ -27,16 +27,21 @@ class MessageController extends Controller
     {
         // Validate the form data
         $request->validate([
-            'name' => 'required|string|max:255',
+            'first_name' => 'required|string|max:255',
+            'last_name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255',
             'phone' => 'nullable|string',
             'subject' => 'nullable|string|max:255',
             'message' => 'required|string',
         ]);
 
+        // Combine first and last name
+        $first_name = $request->input('first_name');
+        $last_name = $request->input('last_name');
+
         // Create and save the message
         $message = new Message();
-        $message->name = $request->input('name');
+        $message->name = $first_name . ' ' . $last_name; // Store combined name
         $message->email = $request->input('email');
         $message->phone = $request->input('phone');
         $message->subject = $request->input('subject');
@@ -47,7 +52,15 @@ class MessageController extends Controller
         if ($request->has('subscribe')) {
             // Use the injected LeadController to call the subscribe method
             try {
-                $subscribeResponse = $this->leadController->subscribe($request);
+                $leadController = new LeadController();
+                $subscribeRequest = new Request([
+                    'email' => $request->input('email'),
+                    'first_name' => $first_name,
+                    'last_name' => $last_name,
+                ]);
+
+                // Call the subscribe method with the new request
+                $subscribeResponse = $leadController->subscribe($subscribeRequest);
                 Log::info('Subscription Response:', ['response' => $subscribeResponse]);
             } catch (\Exception $e) {
                 Log::error('Subscription Failed:', ['error' => $e->getMessage()]);
