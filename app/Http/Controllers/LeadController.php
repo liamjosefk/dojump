@@ -50,39 +50,38 @@ class LeadController extends Controller
             }
 
             // Attempt to add the email to Mailchimp
+            Log::info('Mailchimp Subscription Data:', ['data' => $data]); // Log data being sent to Mailchimp
             $response = $this->mailchimp->addToList($data, $listId);
 
             // Log the full response from Mailchimp to inspect its structure
-            Log::info('Mailchimp Response: ', ['response' => $response]);
+            Log::info('Mailchimp Response:', ['response' => $response]);
 
             // Check if the Mailchimp API response indicates success (status: 'subscribed')
             if (isset($response->status) && $response->status === 'subscribed') {
-
                 // Store email locally in the database only if Mailchimp subscription was successful
                 $lead = new Lead();
-                $lead->email = $request->email;
+                $lead->email = $request->input('email');
                 if ($request->has('first_name')) {
-                    $lead->first_name = $request->first_name;
+                    $lead->first_name = $request->input('first_name');
                 }
                 if ($request->has('last_name')) {
-                    $lead->last_name = $request->last_name;
+                    $lead->last_name = $request->input('last_name');
                 }
                 $lead->save();
 
                 // Flash success message
                 session()->flash('email-stored', 'Email Stored');
                 return ['status' => 'success', 'message' => 'Successfully Subscribed!'];
-
             } else {
                 // If the response doesn't indicate success, log the error and show failure message
-                Log::error('Unexpected Mailchimp Response: ', ['response' => $response]);
+                Log::error('Unexpected Mailchimp Response:', ['response' => $response]);
                 return ['status' => 'error', 'message' => 'Failed to subscribe. Please try again.'];
             }
 
         } catch (\Exception $e) {
             // Log the error for debugging
             $errorMessage = $e->getMessage();
-            Log::error('Mailchimp API Exception: ', ['error' => $errorMessage]);
+            Log::error('Mailchimp API Exception:', ['error' => $errorMessage]);
 
             // Check if the error is related to the "Member Exists" issue
             if (strpos($errorMessage, 'Member Exists') !== false) {
@@ -93,6 +92,7 @@ class LeadController extends Controller
             return ['status' => 'error', 'message' => 'Failed to subscribe. Please try again later.'];
         }
     }
+
 
 
 
