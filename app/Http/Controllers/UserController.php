@@ -59,4 +59,34 @@ class UserController extends Controller
         }
     }
 
+    public function edit(Request $request)
+    {
+        // Get the currently authenticated user
+        $user = auth()->user();
+
+        // Validate the incoming data
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users,email,' . $user->id,  // Exclude the current user's email from uniqueness check
+            'password' => 'nullable|string|min:8|confirmed',  // Password fields are optional
+        ]);
+
+        // Update user's name and email
+        $user->name = $request->input('name');
+        $user->email = $request->input('email');
+
+        // Only update the password if a new one is provided
+        if ($request->filled('password')) {
+            $user->password = Hash::make($request->input('password'));
+        }
+
+        // Save the updated user data
+        $user->save();
+
+        // Return back with success message
+        return back()->with('success', 'Profile updated successfully!');
+    }
+
+
+
 }

@@ -53,7 +53,7 @@
         <!-- Contact Form -->
         <div class="container mt-5">
             <h2 class="text-primary text-center">We would love to hear from you!</h2>
-            <form action="{{route('message.store')}}" method="post">
+            <form action="{{ route('message.store') }}" method="post">
                 @csrf
                 @method('POST')
 
@@ -79,18 +79,26 @@
                             <label for="message" class="mt-3">Message <span class="text-red">*</span></label>
                             <textarea name="message" id="message" cols="30" rows="10" class="form-control" required></textarea>
                         </div>
+                        <div class="col-sm-12 mt-3">
+                            <div class="form-check text-right">
+                                <input class="form-check-input" type="checkbox" name="subscribe" id="subscribe">
+                                <label class="form-check-label" for="subscribe">
+                                    Subscribe to Our Newsletter
+                                </label>
+                            </div>
+                        </div>
                         <div class="col-12 col-sm-6 offset-sm-3 col-md-3 offset-md-9">
                             <button class="btn btn-primary mt-4 btn-100" type="submit">Submit</button>
                             <div class="text-center text-red">
                                 @if(session()->has('message-sent'))
-                                    {{session('message-sent')}}
+                                    {{ session('message-sent') }}
                                 @endif
                             </div>
                         </div>
                     </div>
                 </div>
-
             </form>
+
         </div>
         <!-- /Contact Form -->
 
