@@ -7,12 +7,15 @@
     "require": {
         "php": "^8.1",
         "ext-pdo": "*",
+        "google/analytics-data": "^0.18.0",
+        "google/apiclient": "2.17",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.0",
         "laravel/sanctum": "^3.2",
         "laravel/tinker": "^2.8",
         "laravel/ui": "^4.5",
-        "mailchimp/marketing": "^3.0"
+        "mailchimp/marketing": "^3.0",
+        "monolog/monolog": "^3.0"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
