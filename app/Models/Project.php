@@ -11,4 +11,9 @@ class Project extends Model
 
     protected $guarded = [];
 
+    public function reviews()
+    {
+        return $this->belongsToMany(Review::class, 'project_review');
+    }
+
 }
