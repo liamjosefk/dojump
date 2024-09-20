@@ -49,10 +49,8 @@ class LeadController extends Controller
                 $data['merge_fields']['LNAME'] = $request->input('last_name');
             }
 
-            // Log the data being sent to Mailchimp
-            Log::info('Mailchimp Subscription Request Data:', ['data' => $data]);
-
             // Attempt to add the email to Mailchimp
+            Log::info('Mailchimp Subscription Data:', ['data' => $data]); // Log data being sent to Mailchimp
             $response = $this->mailchimp->addToList($data, $listId);
 
             // Log the full response from Mailchimp to inspect its structure
