@@ -65,8 +65,20 @@ class HomeController extends Controller
     }
     public function reviews_audience()
     {
-        return view('home.reviews.audience');
+        // Fetch the projects with their reviews
+        $ahh_project = Project::with('reviews')->findOrFail(3);
+        $dizzy_project = Project::with('reviews')->findOrFail(2);
+        $tiger_project = Project::with('reviews')->findOrFail(1);
+        $general_reviews = Review::whereDoesntHave('projects')->where('critic', '!=', '1')->get();
+
+        return view('home.reviews.audience', [
+            'ahh_reviews' => $ahh_project->reviews,
+            'dizzy_reviews' => $dizzy_project->reviews,
+            'tiger_reviews' => $tiger_project->reviews,
+            'gen_reviews' => $general_reviews
+        ]);
     }
+
     public function donate()
     {
         return view('home.donate');
