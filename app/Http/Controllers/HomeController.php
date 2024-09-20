@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Image;
 use App\Models\Project;
+use App\Models\Review;
 use App\Models\Video;
 use Illuminate\Http\Request;
 
@@ -58,7 +59,9 @@ class HomeController extends Controller
     }
     public function reviews_critic()
     {
-        return view('home.reviews.critic');
+        return view('home.reviews.critic', [
+            'reviews' => Review::where('critic', '=', '1')->where('is_active', '=', '1')->latest()->get()
+        ]);
     }
     public function reviews_audience()
     {

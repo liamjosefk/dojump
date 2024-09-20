@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a8e8501-d7e4-4b65-bc80-cd5cef4631c3" name="Changes" comment="" />
+    <list default="true" id="5a8e8501-d7e4-4b65-bc80-cd5cef4631c3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ReviewController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReviewController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Project.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Review.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Review.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2024_09_17_022518_add_review_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2024_09_17_022518_add_review_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/reviews/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/reviews/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/admin/modals/add-review.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/admin/modals/add-review.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/admin/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/admin/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/reviews/critic.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/reviews/critic.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/review.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/review.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -257,6 +269,10 @@
       <workItem from="1726355703833" duration="607000" />
       <workItem from="1726517878134" duration="34648000" />
       <workItem from="1726561974849" duration="1619000" />
+      <workItem from="1726687045788" duration="1697000" />
+      <workItem from="1726701441009" duration="1476000" />
+      <workItem from="1726703372765" duration="754000" />
+      <workItem from="1726785220515" duration="7221000" />
     </task>
     <servers />
   </component>

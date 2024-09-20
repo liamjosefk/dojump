@@ -14,10 +14,12 @@ return new class extends Migration
         Schema::create('reviews', function (Blueprint $table) {
             $table->id();
             $table->boolean('is_active')->default('1');
-            $table->string('title');
+            $table->string('author');
+            $table->string('title')->nullable();
             $table->text('content');
             $table->string('image')->nullable();
             $table->string('link')->nullable();
+            $table->boolean('critic')->default('0');
             $table->timestamps();
         });
     }
