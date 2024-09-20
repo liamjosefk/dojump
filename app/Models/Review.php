@@ -10,4 +10,13 @@ class Review extends Model
     use HasFactory;
 
     protected $guarded = [];
+
+
+    public function projects()
+    {
+        return $this->belongsToMany(Project::class, 'project_review');
+    }
+
+
+
 }
