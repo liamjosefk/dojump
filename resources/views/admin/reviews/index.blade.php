@@ -152,7 +152,7 @@
                                         <div class="form-group">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h3 class="modal-title" id="exampleModalLabel">Add Review</h3>
+                                                    <h3 class="modal-title" id="exampleModalLabel">Edit Review</h3>
                                                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                                                         <span aria-hidden="true">×</span>
                                                     </button>
