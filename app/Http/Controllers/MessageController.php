@@ -50,12 +50,16 @@ class MessageController extends Controller
 
         // Check if the user opted to subscribe to the newsletter
         if ($request->has('subscribe')) {
-            // Log the subscription attempt
-            Log::info('User opted to subscribe with email: ' . $request->input('email'));
-
+            // Use the injected LeadController to call the subscribe method
             try {
-                // Pass the original request to the LeadController's subscribe method
-                $subscribeResponse = $this->leadController->subscribe($request);
+                $subscribeRequest = new Request([
+                    'email' => $request->input('email'),
+                    'first_name' => $first_name,
+                    'last_name' => $last_name,
+                ]);
+
+                // Call the subscribe method with the new request
+                $subscribeResponse = $this->leadController->subscribe($subscribeRequest);
                 Log::info('Subscription Response:', ['response' => $subscribeResponse]);
             } catch (\Exception $e) {
                 Log::error('Subscription Failed:', ['error' => $e->getMessage()]);
@@ -68,7 +72,6 @@ class MessageController extends Controller
         // Redirect back with success message
         return back();
     }
-
 
 
 }
