@@ -61,7 +61,7 @@
                                     @endif
                                 </td>
 
-                                <td> {{$review->image}} </td>
+                                <td><img src="{{asset('storage/' . $review->image)}}" alt="" class="img-responsive" style="max-height: 50px;"> </td>
                                 <td> {{$review->author}} </td>
                                 <td> {{$review->title}} </td>
                                 <td> {{ \Illuminate\Support\Str::limit($review->content, 50, '[...]') }} </td>
@@ -124,7 +124,7 @@
                                                     {!! $review->content !!}
                                                 </h5>
                                             </div>
-                                            <div class="modal-footer">
+                                            <div class="modal-footer pb-5">
                                                 <div class="row width-100">
                                                     <div class="col-6">
                                                         <button class="btn btn-secondary btn-100" type="button" data-dismiss="modal">Close</button>
@@ -200,7 +200,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="modal-footer">
+                                                <div class="modal-footer pb-5">
                                                     <div class="row width-100">
                                                         <div class="col-6">
                                                             <button class="btn btn-secondary btn-100" type="button" data-dismiss="modal">Cancel</button>
@@ -244,7 +244,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="modal-footer">
+                                                <div class="modal-footer pb-5">
                                                     <div class="row width-100">
                                                         <div class="col-6">
                                                             <button class="btn btn-secondary btn-100" type="button" data-dismiss="modal">Cancel</button>
