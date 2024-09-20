@@ -60,8 +60,16 @@
                 <div class="form-group">
                     <div class="row">
                         <div class="col-sm-6 col-md-4">
-                            <label for="name" class="mt-3">Name <span class="text-red">*</span></label>
-                            <input type="text" class="form-control" name="name" placeholder="John Smith" required>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="first_name" class="mt-3">First <span class="text-red">*</span></label>
+                                    <input type="text" class="form-control" name="first_name" placeholder="John" required>
+                                </div>
+                                <div class="col-6">
+                                    <label for="last_name" class="mt-3">Last <span class="text-red">*</span></label>
+                                    <input type="text" class="form-control" name="last_name" placeholder="Smith" required>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-sm-6 col-md-4">
                             <label for="email" class="mt-3">Email <span class="text-red">*</span></label>
@@ -98,6 +106,7 @@
                     </div>
                 </div>
             </form>
+
 
         </div>
         <!-- /Contact Form -->
