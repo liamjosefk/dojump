@@ -1,6 +1,10 @@
 @extends('layouts.app')
 
 
+@section('browser-title')
+    Login | DoJump
+@endsection
+
 @section('styles')
     <style>
         .bg-login-image {
