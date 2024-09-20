@@ -11315,3 +11315,9 @@ table tr td a.tableBtn:hover,
 table tr td a.tableBtn:active {
   color:#4e1964;
 }
+.modal-content label {
+  color: #ffffff !important;
+}
+.modal-content label span {
+  color: #ff0000 !important;
+}

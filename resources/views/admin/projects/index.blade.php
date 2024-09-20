@@ -147,6 +147,12 @@
                                 <div class="modal fade mt-5" id="updateStage{{ $item->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h3 class="modal-title">Edit: {{$item->title}}</h3>
+                                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">×</span>
+                                                </button>
+                                            </div>
                                             <form action="{{ route('project.update_stage', $item->id) }}" method="post" enctype="multipart/form-data">
                                                 @csrf
                                                 @method('PUT')
