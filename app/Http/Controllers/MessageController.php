@@ -52,7 +52,6 @@ class MessageController extends Controller
         if ($request->has('subscribe')) {
             // Use the injected LeadController to call the subscribe method
             try {
-                $leadController = new LeadController();
                 $subscribeRequest = new Request([
                     'email' => $request->input('email'),
                     'first_name' => $first_name,
@@ -60,7 +59,7 @@ class MessageController extends Controller
                 ]);
 
                 // Call the subscribe method with the new request
-                $subscribeResponse = $leadController->subscribe($subscribeRequest);
+                $subscribeResponse = $this->leadController->subscribe($subscribeRequest);
                 Log::info('Subscription Response:', ['response' => $subscribeResponse]);
             } catch (\Exception $e) {
                 Log::error('Subscription Failed:', ['error' => $e->getMessage()]);

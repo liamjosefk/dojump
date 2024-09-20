@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a8e8501-d7e4-4b65-bc80-cd5cef4631c3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MessageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MessageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/contact.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="5a8e8501-d7e4-4b65-bc80-cd5cef4631c3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -279,7 +275,7 @@
       <workItem from="1726687045788" duration="1697000" />
       <workItem from="1726701441009" duration="1476000" />
       <workItem from="1726703372765" duration="754000" />
-      <workItem from="1726785220515" duration="24790000" />
+      <workItem from="1726785220515" duration="25323000" />
     </task>
     <servers />
   </component>
